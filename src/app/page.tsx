@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const HopePage = () => {
   return (
-    <div>
-      <h1>Welcome To My Portfolio</h1>
+    <div className="text-3xl font-bold">
+      <h1>Welcome To My Portfolio 🤩</h1>
       <ul>
         <li>
           <Link href="/">Home</Link>
