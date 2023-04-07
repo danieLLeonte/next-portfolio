@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const HopePage = () => {
+const HomePage = () => {
   return (
     <div className="text-3xl font-bold">
       <h1>Welcome To My Portfolio 🤩</h1>
@@ -16,4 +16,4 @@ const HopePage = () => {
   );
 };
 
-export default HopePage;
+export default HomePage;
