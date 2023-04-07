@@ -29,7 +29,6 @@ const getLinkColor = (pathname: string, link: string) => {
 
 const Header = () => {
   const pathname = usePathname();
-  console.log("🚀 ~ file: Header.tsx:11 ~ Header ~ pathname:", pathname);
 
   return (
     <header className="flex justify-between items-center font-bold uppercase py-12">
