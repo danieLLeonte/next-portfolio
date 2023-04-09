@@ -1,11 +1,22 @@
 /** @type {import('tailwindcss').Config} */
+
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
 module.exports = {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#0252CD",
+        secondary: "#F6F6F6",
+        highlight: "#FFBE62",
+        textPrimary: "#151E2C",
+        textSecondary: "#9D9D9D",
+      },
+      fontFamily: {
+        serif: ["var(--font-montserrat)", ...fontFamily.serif],
+      },
+    },
   },
   plugins: [],
-}
-
+};
