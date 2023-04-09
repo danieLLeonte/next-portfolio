@@ -24,10 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.variable} font-serif bg-secondary text-textSecondary max-w-[1440px] mx-auto px-12`}
+        className={`${montserrat.variable} font-serif bg-secondary text-textSecondary`}
       >
         <Header />
-        <main>{children}</main>
+        <main className="max-w-[1440px] mx-auto px-12">{children}</main>
       </body>
     </html>
   );
