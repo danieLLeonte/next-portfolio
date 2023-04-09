@@ -19,16 +19,16 @@ const links = [
   },
 ];
 
-const getLinkColor = (pathname: string, link: string) => {
-  if (pathname === link) {
-    return "text-textPrimary";
-  }
-};
+const getLinkColor = (pathname: string, link: string) =>
+  pathname === link ? "text-textPrimary" : "text-textSecondary";
 
 const Header = () => {
   const [pathName, setPathName] = useState<string>(window.location.hash);
 
-  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, link: string) => {
+  const handleLinkClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    link: string
+  ) => {
     if (link === "") {
       e.preventDefault();
       window.scrollTo({ top: 0 });
@@ -44,7 +44,10 @@ const Header = () => {
         <ul className="flex justify-between gap-x-9 text-xs">
           {links.map((link, index) => (
             <li key={index} className={getLinkColor(pathName, link.path)}>
-              <a onClick={(e) => handleLinkClick(e, link.path)} href={link.path}>
+              <a
+                onClick={(e) => handleLinkClick(e, link.path)}
+                href={link.path}
+              >
                 {link.name}
               </a>
             </li>
