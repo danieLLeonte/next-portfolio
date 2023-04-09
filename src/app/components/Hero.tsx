@@ -24,7 +24,10 @@ const Hero = () => {
           currently working with React, Node, and MongoDB.
         </p>
         <div className="flex gap-11 items-center">
-          <button className="bg-primary text-white font-bold text-sm py-5 px-11 rounded-full">
+          <button
+            type="button"
+            className="bg-primary text-white font-bold text-sm py-5 px-11 rounded-full"
+          >
             Contact Me
           </button>
           <AiFillMail className="icon" size={21} />
