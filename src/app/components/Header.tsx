@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <header className="flex justify-between items-center font-bold uppercase py-12">
-      <Image src={logo} width={45} height={45} alt="logo" />
+      <Image src={logo} alt="logo" width={45} height={45} />
       <nav>
         <ul className="flex justify-between gap-x-9 text-xs">
           {links.map((link, index) => (
