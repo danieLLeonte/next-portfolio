@@ -5,7 +5,7 @@ import { graphic, lineDirection } from "../assets";
 
 const Hero = () => {
   return (
-    <section className="flex justify-between">
+    <section className="flex justify-between flex-wrap">
       <div className="flex-1 flex flex-col gap-y-9">
         <h2 className="font-bold uppercase text-primary tracking-[.5em]">
           Hi, I am Daniel
@@ -41,7 +41,7 @@ const Hero = () => {
         alt="hero"
         width={650}
         height={650}
-        className="flex-1"
+        className="flex-1 object-contain"
       />
     </section>
   );
