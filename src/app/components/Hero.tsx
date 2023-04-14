@@ -5,12 +5,12 @@ import { graphic, lineDirection } from "../assets";
 
 const Hero = () => {
   return (
-    <section className="flex justify-between flex-col lg:flex-row gap-20">
-      <div className="flex-1 flex flex-col gap-y-9 items-center">
+    <section className="flex justify-between flex-col lg:flex-row gap-20 items-center mt-24 lg:mt-0 lg:h-screen-20">
+      <div className="flex-1 flex flex-col gap-y-9 items-center lg:items-start">
         <h2 className="font-bold uppercase text-primary tracking-[.5em] text-xs sm:text-base">
           Hi, I am Daniel
         </h2>
-        <h1 className="sm:font-bold font-[800] sm:text-[4rem] text-4xl text-textPrimary sm:leading-[5.4rem] leading-[155%] text-center">
+        <h1 className="sm:font-bold font-[800] sm:text-[4rem] text-4xl text-textPrimary sm:leading-[5.4rem] leading-[155%] text-center lg:text-left">
           Professional <br />
           <span className="relative">
             Web Developer
@@ -49,7 +49,7 @@ const Hero = () => {
         alt="hero"
         width={650}
         height={650}
-        className="flex-1 object-contain self-center grow lg:grow-0 xl:grow min-w-[330px]"
+        className="flex-1 object-contain grow lg:grow-0 xl:grow min-w-[330px]"
       />
     </section>
   );
