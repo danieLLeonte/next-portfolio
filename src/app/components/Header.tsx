@@ -1,7 +1,26 @@
 "use client";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
+import { logo, resume } from "../assets";
 import Navbar from "./Navbar";
+
+
+
+const links = [
+  {
+    name: "Home",
+    path: "",
+  },
+  {
+    name: "About Me",
+    path: "#about",
+  },
+  {
+    name: "Projects",
+    path: "#projects",
+  },
+];
 
 const getLinkColor = (pathname: string, link: string) =>
   pathname === link ? "text-textPrimary" : "text-textSecondary";
