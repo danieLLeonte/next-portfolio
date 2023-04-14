@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
-import { HiMenuAlt4, HiX } from "react-icons/hi";
+import { HiX } from "react-icons/hi";
+import { BiMenuAltRight } from "react-icons/bi";
 import { motion } from "framer-motion";
 
 import { logo, resume } from "../assets";
@@ -51,7 +52,7 @@ const Navbar = ({
         ))}
       </ul>
       <div className="block sm:hidden">
-        <HiMenuAlt4 className="-mr-2 h-14 w-14" onClick={() => setToggle(true)} />
+        <BiMenuAltRight className="-mr-2 h-14 w-14 text-black" onClick={() => setToggle(true)} />
 
         {toggle && (
           <motion.div
@@ -59,7 +60,7 @@ const Navbar = ({
             transition={{ ease: "easeOut", duration: 0.85 }}
             className="fixed top-0 right-0 w-4/6 h-screen bg-secondary border-l-4 flex flex-col items-end justify-center shadow-xl"
           >
-            <HiX className="w-10 h-10 m-7" onClick={() => setToggle(false)} />
+            <HiX className="w-10 h-10 m-7 text-black" onClick={() => setToggle(false)} />
             <ul className="w-full h-full flex flex-col gap-y-10 mt-4">
               {links.map((link, index) => (
                 <li className="ml-12 text-lg" key={index}>
