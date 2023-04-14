@@ -64,7 +64,7 @@ const Navbar = ({
             className="fixed top-0 right-0 w-4/6 h-screen bg-secondary border-l-4 flex flex-col items-end justify-center shadow-xl"
           >
             <HiX
-              className="w-10 h-10 m-7 text-black"
+              className="w-10 h-10 my-7 mx-10 text-black"
               onClick={() => setToggle(false)}
             />
             <ul className="w-full h-full flex flex-col gap-y-10 mt-4">

@@ -20,7 +20,7 @@ module.exports = {
         serif: ["var(--font-montserrat)", ...fontFamily.serif],
       },
       height: {
-        "screen-20": "calc(100vh - 20px)",
+        "screen-navbar": "calc(100vh - 80px)",
       },
     },
   },

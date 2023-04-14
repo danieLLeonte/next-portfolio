@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-col items-center justify-center lg:h-screen h-auto gap-6"
+      className="flex flex-col items-center justify-center lg:h-screen-navbar h-auto gap-6"
     >
       <h2 className="font-bold sm:text-[4rem] text-4xl text-textPrimary leading-[5.4rem]">
         What{" "}
@@ -14,7 +14,7 @@ const About = () => {
         </span>{" "}
         do I provide
       </h2>
-      <div className="flex gap-6">
+      <div className="flex gap-6 flex-col md:flex-row">
         <ServiceCard />
         <ServiceCard />
         <ServiceCard />

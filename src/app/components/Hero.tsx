@@ -5,7 +5,7 @@ import { graphic, lineDirection } from "../assets";
 
 const Hero = () => {
   return (
-    <section className="flex justify-between flex-col lg:flex-row gap-20 items-center mt-24 lg:mt-0 lg:h-screen-20">
+    <section className="flex justify-between flex-col lg:flex-row gap-20 items-center mt-24 lg:mt-0 lg:h-screen-navbar">
       <div className="flex-1 flex flex-col gap-y-9 items-center lg:items-start">
         <h2 className="font-bold uppercase text-primary tracking-[.5em] text-xs sm:text-base">
           Hi, I am Daniel
