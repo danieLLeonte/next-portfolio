@@ -12,7 +12,7 @@ const Hero = () => {
         </h2>
         <h1 className="sm:font-bold font-[800] sm:text-[4rem] text-4xl text-textPrimary sm:leading-[5.4rem] leading-[155%] text-center lg:text-left">
           Professional <br />
-          <span className="relative">
+          <span className="relative z-0">
             Web Developer
             <span className="absolute bottom-0 left-0 -z-10 w-full sm:h-7 h-5 bg-highlight"></span>
           </span>
