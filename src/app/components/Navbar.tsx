@@ -40,7 +40,7 @@ const Navbar = ({
   pathName,
 }: NavbarProps) => {
   return (
-    <nav className="flex flex-1 justify-between items-center max-w-[1440px] mx-auto px-12">
+    <nav className="flex flex-1 justify-between items-center max-w-[1440px] mx-auto px-8 min-[387px]:px-12">
       <Image src={logo} alt="logo" width={45} height={45} />
       <ul className="justify-between gap-x-9 text-xs hidden sm:flex">
         {links.map((link, index) => (
@@ -52,7 +52,10 @@ const Navbar = ({
         ))}
       </ul>
       <div className="block sm:hidden">
-        <BiMenuAltRight className="-mr-2 h-14 w-14 text-black" onClick={() => setToggle(true)} />
+        <BiMenuAltRight
+          className="-mr-2 h-14 w-14 text-black"
+          onClick={() => setToggle(true)}
+        />
 
         {toggle && (
           <motion.div
@@ -60,7 +63,10 @@ const Navbar = ({
             transition={{ ease: "easeOut", duration: 0.85 }}
             className="fixed top-0 right-0 w-4/6 h-screen bg-secondary border-l-4 flex flex-col items-end justify-center shadow-xl"
           >
-            <HiX className="w-10 h-10 m-7 text-black" onClick={() => setToggle(false)} />
+            <HiX
+              className="w-10 h-10 m-7 text-black"
+              onClick={() => setToggle(false)}
+            />
             <ul className="w-full h-full flex flex-col gap-y-10 mt-4">
               {links.map((link, index) => (
                 <li className="ml-12 text-lg" key={index}>
