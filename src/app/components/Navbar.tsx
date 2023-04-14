@@ -74,9 +74,9 @@ const Navbar = ({
                   </a>
                 </li>
               ))}
-              <div className="p-2 rounded-full bg-primary shadow-primary/50 shadow-md cursor-pointer flex justify-around w-4/6 ml-10 items-center">
+              <div className="p-2 rounded-full bg-primary shadow-primary/50 shadow-md cursor-pointer flex justify-around w-36 ml-8 items-center">
                 <Image src={resume} width={29} height={29} alt="resume" />
-                <p className="text-white">Show me the Resume</p>
+                <p className="text-white text-center">Resume</p>
               </div>
             </ul>
           </motion.div>

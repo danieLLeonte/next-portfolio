@@ -13,6 +13,9 @@ module.exports = {
         textPrimary: "#151E2C",
         textSecondary: "#9D9D9D",
       },
+      screens: {
+        'laptop': "1170px",
+      },
       fontFamily: {
         serif: ["var(--font-montserrat)", ...fontFamily.serif],
       },
