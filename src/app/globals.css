@@ -5,3 +5,28 @@
 html {
   scroll-behavior: smooth;
 }
+
+.ease {
+  transition: all 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  @apply bg-primary;
+  @apply shadow-primary/50 shadow-xl;
+}
+
+.service-card:hover .icon-container {
+  @apply bg-white;
+}
+
+.service-card:hover .icon {
+  @apply text-primary;
+}
+
+.service-card:hover .content-container h6 {
+  @apply text-white;
+}
+
+.service-card:hover .content-container p {
+  @apply text-white/80;
+}

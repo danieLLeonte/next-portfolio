@@ -15,9 +15,9 @@ const About = () => {
         do I provide
       </h2>
       <div className="xl:gap-9 gap-16 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
-        <ServiceCard style={''} />
+        <ServiceCard />
         <ServiceCard style={'xl:relative top-11'} />
-        <ServiceCard style={''} />
+        <ServiceCard />
         <ServiceCard style={'xl:relative top-11'} />
       </div>
     </section>
