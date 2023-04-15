@@ -3,11 +3,12 @@ import { About, Hero } from "./components";
 interface SectionWrapperProps {
   children: React.ReactNode;
   bgColor: string;
+  id?: string;
 }
 
-const SectionWrapper = ({ children, bgColor }: SectionWrapperProps) => {
+const SectionWrapper = ({ children, bgColor, id }: SectionWrapperProps) => {
   return (
-    <div className={`${bgColor} sm:py-28 py-24 xl:py-0`}>
+    <div id={id} className={`${bgColor} sm:py-28 py-24 xl:py-0`}>
       <div className="max-w-[1440px] mx-auto px-8 min-[387px]:px-12">
         {children}
       </div>
@@ -21,7 +22,7 @@ const HomePage = () => {
       <SectionWrapper bgColor="bg-secondary !pt-0">
         <Hero />
       </SectionWrapper>
-      <SectionWrapper bgColor="bg-white">
+      <SectionWrapper id="about" bgColor="bg-white">
         <About />
       </SectionWrapper>
     </div>

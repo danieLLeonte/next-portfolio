@@ -2,10 +2,7 @@ import ServiceCard from "./ServiceCard";
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="flex flex-col items-center justify-center xl:h-screen-navbar h-auto gap-20"
-    >
+    <section className="flex flex-col items-center justify-center xl:h-screen-navbar h-auto gap-20">
       <h2 className="font-bold sm:text-[4rem] text-3xl text-textPrimary sm:leading-[5.4rem] leading-10 text-center sm:text-left">
         What{" "}
         <span className="relative z-0">
