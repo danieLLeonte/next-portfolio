@@ -14,13 +14,14 @@ module.exports = {
         textSecondary: "#9D9D9D",
       },
       screens: {
+        xsm: "375px",
         laptop: "1170px",
       },
       fontFamily: {
         serif: ["var(--font-montserrat)", ...fontFamily.serif],
       },
       height: {
-        "screen-20": "calc(100vh - 20px)",
+        "screen-navbar": "calc(100vh - 80px)",
       },
     },
   },

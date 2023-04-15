@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import Image from "next/image";
 import { HiX } from "react-icons/hi";
 import { BiMenuAltRight } from "react-icons/bi";
@@ -45,9 +46,12 @@ const Navbar = ({
       <ul className="justify-between gap-x-9 text-xs hidden sm:flex">
         {links.map((link, index) => (
           <li key={index} className={getLinkColor(pathName, link.path)}>
-            <a onClick={(e) => handleLinkClick(e, link.path)} href={link.path}>
+            <Link
+              onClick={(e) => handleLinkClick(e, link.path)}
+              href={link.path}
+            >
               {link.name}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
@@ -64,7 +68,7 @@ const Navbar = ({
             className="fixed top-0 right-0 w-4/6 h-screen bg-secondary border-l-4 flex flex-col items-end justify-center shadow-xl"
           >
             <HiX
-              className="w-10 h-10 m-7 text-black"
+              className="w-10 h-10 my-7 mx-10 text-black"
               onClick={() => setToggle(false)}
             />
             <ul className="w-full h-full flex flex-col gap-y-10 mt-4">

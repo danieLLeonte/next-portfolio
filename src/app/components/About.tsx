@@ -1,40 +1,22 @@
-import React from "react";
+import ServiceCard from "./ServiceCard";
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="flex flex-col items-center justify-center lg:h-screen h-auto"
-    >
-      <h1 className="text-4xl font-bold">About Me</h1>
-      <p className="text-xl mt-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        voluptates, quod, quia, voluptate quae voluptatem quibusdam
-        exercitationem quas voluptatum quidem quos. Quisquam, quae. Quisquam
-        voluptates, quod, quia, voluptate quae voluptatem quibusdam
-        exercitationem quas voluptatum quidem quos. Quisquam, quae.
-      </p>
-      <p className="text-xl mt-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        voluptates, quod, quia, voluptate quae voluptatem quibusdam
-        exercitationem quas voluptatum quidem quos. Quisquam, quae. Quisquam
-        voluptates, quod, quia, voluptate quae voluptatem quibusdam
-        exercitationem quas voluptatum quidem quos. Quisquam, quae.
-      </p>
-      <p className="text-xl mt-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        voluptates, quod, quia, voluptate quae voluptatem quibusdam
-        exercitationem quas voluptatum quidem quos. Quisquam, quae. Quisquam
-        voluptates, quod, quia, voluptate quae voluptatem quibusdam
-        exercitationem quas voluptatum quidem quos. Quisquam, quae.
-      </p>
-      <p className="text-xl mt-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        voluptates, quod, quia, voluptate quae voluptatem quibusdam
-        exercitationem quas voluptatum quidem quos. Quisquam, quae. Quisquam
-        voluptates, quod, quia, voluptate quae voluptatem quibusdam
-        exercitationem quas voluptatum quidem quos. Quisquam, quae.
-      </p>
+    <section className="flex flex-col items-center justify-center xl:h-screen-navbar h-auto gap-20">
+      <h2 className="font-bold sm:text-[4rem] text-3xl text-textPrimary sm:leading-[5.4rem] leading-10 text-center sm:text-left">
+        What{" "}
+        <span className="relative z-0">
+          service
+          <span className="absolute sm:bottom-2 bottom-0.5 left-0 -z-10 w-full sm:h-5 h-3 bg-highlight"></span>
+        </span>{" "}
+        do I provide
+      </h2>
+      <div className="xl:gap-10 gap-16 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+        <ServiceCard />
+        <ServiceCard style={"xl:relative top-11"} />
+        <ServiceCard />
+        <ServiceCard style={"xl:relative top-11"} />
+      </div>
     </section>
   );
 };

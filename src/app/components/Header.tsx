@@ -20,6 +20,10 @@ const Header = () => {
       window.scrollTo({ top: 0 });
       window.history.pushState({}, "", "/");
     }
+    // link without hash
+    const linkWithoutHash = link.replace("#", "");
+    const target = document.getElementById(linkWithoutHash);
+    target?.scrollIntoView({ block: "start" });
     setPathName(link);
   };
 

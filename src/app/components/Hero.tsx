@@ -5,14 +5,14 @@ import { graphic, lineDirection } from "../assets";
 
 const Hero = () => {
   return (
-    <section className="flex justify-between flex-col lg:flex-row gap-20 items-center mt-24 lg:mt-0 lg:h-screen-20">
+    <section className="flex justify-between flex-col lg:flex-row gap-20 items-center mt-24 lg:mt-0 lg:h-screen-navbar">
       <div className="flex-1 flex flex-col gap-y-9 items-center lg:items-start">
         <h2 className="font-bold uppercase text-primary tracking-[.5em] text-xs sm:text-base">
           Hi, I am Daniel
         </h2>
         <h1 className="sm:font-bold font-[800] sm:text-[4rem] text-4xl text-textPrimary sm:leading-[5.4rem] leading-[155%] text-center lg:text-left">
           Professional <br />
-          <span className="relative">
+          <span className="relative z-0">
             Web Developer
             <span className="absolute bottom-0 left-0 -z-10 w-full sm:h-7 h-5 bg-highlight"></span>
           </span>
