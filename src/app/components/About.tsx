@@ -1,3 +1,4 @@
+import AppWrap from "../wrapper/AppWrap";
 import ServiceCard from "./ServiceCard";
 
 const About = () => {
@@ -13,12 +14,12 @@ const About = () => {
       </h2>
       <div className="xl:gap-10 gap-16 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
         <ServiceCard />
-        <ServiceCard style={"xl:relative top-11"} />
+        <ServiceCard style="xl:relative top-11" />
         <ServiceCard />
-        <ServiceCard style={"xl:relative top-11"} />
+        <ServiceCard style="xl:relative top-11" />
       </div>
     </section>
   );
 };
 
-export default About;
+export default AppWrap(About, "about", "bg-white");

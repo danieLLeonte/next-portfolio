@@ -1,3 +1,4 @@
+import AppWrap from "../wrapper/AppWrap";
 import WorkCard from "./WorkCard";
 
 const Work = () => {
@@ -28,4 +29,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default AppWrap(Work, "work", "bg-white");

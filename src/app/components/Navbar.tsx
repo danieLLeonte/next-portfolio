@@ -74,7 +74,7 @@ const Navbar = ({
             <ul className="w-full h-full flex flex-col gap-y-10 mt-4">
               {links.map((link, index) => (
                 <li className="ml-12 text-lg" key={index}>
-                  <a
+                  <Link
                     href={link.path}
                     onClick={(e) => {
                       handleLinkClick(e, link.path);
@@ -82,7 +82,7 @@ const Navbar = ({
                     }}
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
               <div className="p-2 rounded-full bg-primary shadow-primary/50 shadow-md cursor-pointer flex justify-around w-36 ml-8 items-center">
