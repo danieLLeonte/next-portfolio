@@ -2,6 +2,7 @@ import Image from "next/image";
 import { AiFillMail, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 import { graphic, lineDirection } from "../assets";
+import AppWrap from "../wrapper/AppWrap";
 
 const Hero = () => {
   return (
@@ -55,4 +56,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default AppWrap(Hero, "hero", "bg-secondary !pt-0");
