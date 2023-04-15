@@ -1,4 +1,4 @@
-import { About, Hero } from "./components";
+import { About, Hero, Work } from "./components";
 
 interface SectionWrapperProps {
   children: React.ReactNode;
@@ -24,6 +24,9 @@ const HomePage = () => {
       </SectionWrapper>
       <SectionWrapper id="about" bgColor="bg-white">
         <About />
+      </SectionWrapper>
+      <SectionWrapper id="work" bgColor="bg-white">
+        <Work />
       </SectionWrapper>
     </div>
   );
