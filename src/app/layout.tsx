@@ -27,9 +27,7 @@ export default function RootLayout({
         className={`${montserrat.variable} font-serif bg-secondary text-textSecondary`}
       >
         <Header />
-        <main className="flex flex-col gap-24 lg:gap-0">
-          {children}
-        </main>
+        <main>{children}</main>
       </body>
     </html>
   );

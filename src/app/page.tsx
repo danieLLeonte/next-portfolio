@@ -7,7 +7,7 @@ interface SectionWrapperProps {
 
 const SectionWrapper = ({ children, bgColor }: SectionWrapperProps) => {
   return (
-    <div className={bgColor}>
+    <div className={`${bgColor} sm:py-28 py-24 xl:py-0`}>
       <div className="max-w-[1440px] mx-auto px-8 min-[387px]:px-12">
         {children}
       </div>
@@ -17,14 +17,14 @@ const SectionWrapper = ({ children, bgColor }: SectionWrapperProps) => {
 
 const HomePage = () => {
   return (
-    <>
-      <SectionWrapper bgColor="bg-secondary">
+    <div>
+      <SectionWrapper bgColor="bg-secondary !pt-0">
         <Hero />
       </SectionWrapper>
       <SectionWrapper bgColor="bg-white">
         <About />
       </SectionWrapper>
-    </>
+    </div>
   );
 };
 
