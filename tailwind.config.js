@@ -14,6 +14,7 @@ module.exports = {
         textSecondary: "#9D9D9D",
       },
       screens: {
+        xsm: "375px",
         laptop: "1170px",
       },
       fontFamily: {
