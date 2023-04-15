@@ -4,9 +4,9 @@ import "./globals.css";
 import Header from "./components/Header";
 
 const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-montserrat',
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-montserrat",
 });
 
 export const metadata = {
@@ -27,7 +27,9 @@ export default function RootLayout({
         className={`${montserrat.variable} font-serif bg-secondary text-textSecondary`}
       >
         <Header />
-        <main className="max-w-[1440px] mx-auto px-12">{children}</main>
+        <main className="max-w-[1440px] mx-auto px-8 min-[387px]:px-12">
+          {children}
+        </main>
       </body>
     </html>
   );
