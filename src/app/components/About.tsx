@@ -3,11 +3,11 @@ import ServiceCard from "./ServiceCard";
 const About = () => {
   return (
     <section className="flex flex-col items-center justify-center xl:h-screen-navbar h-auto gap-20">
-      <h2 className="font-bold sm:text-[4rem] text-3xl text-textPrimary sm:leading-[5.4rem] leading-10 text-center sm:text-left">
+      <h2 className="font-bold sm:text-[2.5rem] text-3xl text-textPrimary sm:leading-[5.4rem] leading-10 text-center sm:text-left">
         What{" "}
         <span className="relative z-0">
           service
-          <span className="absolute sm:bottom-2 bottom-0.5 left-0 -z-10 w-full sm:h-5 h-3 bg-highlight"></span>
+          <span className="absolute sm:bottom-1 bottom-0.5 sm:-left-1 -left-0.5 -z-10 w-[105%] sm:h-3.5 h-3 bg-highlight"></span>
         </span>{" "}
         do I provide
       </h2>
