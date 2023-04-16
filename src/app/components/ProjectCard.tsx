@@ -11,7 +11,7 @@ const categories = ["UI/UX", "Fullstack"];
 const ProjectCard = () => {
   return (
     <div className="bg-primary xl:px-28 py-11 rounded-3xl flex justify-between items-center flex-col xl:flex-row">
-      <div className="xl:py-11 text-white xl:w-1/3 w-3/4 flex flex-col sm:gap-7 gap-3 justify-between">
+      <div className="xl:py-11 text-white xl:w-1/3 w-3/4 flex flex-col xl:gap-7 gap-3 justify-between">
         <h6 className={styles.heading6}>Real Estate Agency Website</h6>
         <p className={`${styles.body2} hidden md:block`}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, sit
@@ -27,7 +27,7 @@ const ProjectCard = () => {
             </div>
           ))}
         </div>
-        <div className="flex gap-6 lg:mt-8 mt-2">
+        <div className="flex gap-6 xl:mt-8 mt-3">
           <div className="smflex gap-4 hidden text-2xl">
             <MdPreview />
             <FaGithub />
@@ -44,10 +44,7 @@ const ProjectCard = () => {
       <Image
         src={mockup}
         alt="mockup"
-        className="px-11 sm:px-0 sm:w-2/3 md:w-2/4 mt-8 lg:mt-0"
-        // width={350}
-        // height={350}
-        // className="h-1/5"
+        className="px-11 sm:px-0 sm:w-2/3 md:w-2/4 mt-8 xl:mt-0"
       />
     </div>
   );
