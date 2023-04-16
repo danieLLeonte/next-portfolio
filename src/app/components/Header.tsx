@@ -42,7 +42,7 @@ const Header = () => {
 
   return (
     <header
-      className={`ease-in-out duration-300 font-bold uppercase h-20 sticky inset-0 z-50 flex items-center backdrop-blur-lg bg-secondary/50 ${
+      className={`ease-in-out duration-300 font-bold uppercase h-20 sticky inset-0 z-50 flex items-center bg-secondary ${
         shadow ? "shadow-xl pt-1" : "pt-4"
       }`}
     >
