@@ -28,7 +28,8 @@ const ProjectCard = () => {
           ))}
         </div>
         <div className="flex gap-6 xl:mt-8 mt-3">
-          <div className="smflex gap-4 hidden text-2xl">
+          {/* figure out later if add projects links: smflex added intentionally */}
+          <div className="smflex gap-4 hidden text-2xl"> 
             <MdPreview />
             <FaGithub />
           </div>
