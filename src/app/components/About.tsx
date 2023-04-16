@@ -12,11 +12,11 @@ const About = () => {
         </span>{" "}
         do I provide
       </h2>
-      <div className="xl:gap-10 gap-16 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+      <div className="xl:gap-10 gap-16 grid grid-cols-1 min-[529px]:w-3/4 md:grid-cols-2 min-[1350px]:grid-cols-4 md:w-full justify-items-center">
         <ServiceCard />
-        <ServiceCard style="xl:relative top-11" />
+        <ServiceCard style="min-[1350px]:relative top-11" />
         <ServiceCard />
-        <ServiceCard style="xl:relative top-11" />
+        <ServiceCard style="min-[1350px]:relative top-11" />
       </div>
     </section>
   );

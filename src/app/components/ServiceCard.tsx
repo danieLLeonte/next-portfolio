@@ -2,10 +2,10 @@ import { CgIfDesign } from "react-icons/cg";
 
 import styles from "../styles";
 
-const ServiceCard = ({ style }: { style?: string }) => {
+const ServiceCard = ({ style="" }: { style?: string }) => {
   return (
     <div
-      className={`service-card ease bg-secondary rounded-lg xsm:w-72 xsm:h-96 w-64 h-80 p-8 flex flex-col justify-between ${style}`}
+      className={`service-card ease bg-secondary rounded-lg p-8 flex flex-col justify-between gap-14 ${style}`}
     >
       <div className="icon-container ease bg-primary shadow-primary/50 shadow-md rounded-lg xsm:h-16 xsm:w-16 h-14 w-14 text-white flex justify-center items-center">
         <CgIfDesign className="icon ease xsm:text-4xl text-3xl" />

@@ -11,7 +11,7 @@ const categories = ["UI/UX", "Fullstack"];
 const ProjectCard = () => {
   return (
     <div className="bg-primary xl:px-28 py-11 rounded-3xl flex justify-between items-center flex-col xl:flex-row">
-      <div className="xl:py-11 text-white xl:w-1/3 w-3/4 flex flex-col xl:gap-7 gap-3 justify-between">
+      <div className="xl:py-11 text-white xl:w-1/3 w-3/4 flex flex-col xl:gap-7 gap-4 justify-between">
         <h6 className={styles.heading6}>Real Estate Agency Website</h6>
         <p className={`${styles.body2} hidden md:block`}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, sit
