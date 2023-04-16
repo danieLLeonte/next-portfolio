@@ -11,8 +11,7 @@ html {
 }
 
 .service-card:hover {
-  @apply bg-primary;
-  @apply shadow-primary/50 shadow-xl;
+  @apply bg-primary shadow-primary/50 shadow-xl;
 }
 
 .service-card:hover .icon-container {
@@ -29,4 +28,22 @@ html {
 
 .service-card:hover .content-container p {
   @apply text-white/80;
+}
+
+.work-card:hover {
+  @apply lg:left-4 border-0 shadow-secondary drop-shadow-xl bg-white;
+}
+
+.pacman {
+  transform: rotate(45deg);
+  width: 0px;
+  height: 0px;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #FFBE62;
+  border-left: 15px solid #FFBE62;
+  border-bottom: 15px solid #FFBE62;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
