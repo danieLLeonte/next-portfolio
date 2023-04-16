@@ -11,8 +11,7 @@ html {
 }
 
 .service-card:hover {
-  @apply bg-primary;
-  @apply shadow-primary/50 shadow-xl;
+  @apply bg-primary shadow-primary/50 shadow-xl;
 }
 
 .service-card:hover .icon-container {
@@ -29,6 +28,10 @@ html {
 
 .service-card:hover .content-container p {
   @apply text-white/80;
+}
+
+.work-card:hover {
+  @apply lg:left-4 border-0 shadow-secondary drop-shadow-xl bg-white;
 }
 
 .pacman {
