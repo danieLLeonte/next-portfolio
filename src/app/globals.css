@@ -30,3 +30,17 @@ html {
 .service-card:hover .content-container p {
   @apply text-white/80;
 }
+
+.pacman {
+  transform: rotate(45deg);
+  width: 0px;
+  height: 0px;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #FFBE62;
+  border-left: 15px solid #FFBE62;
+  border-bottom: 15px solid #FFBE62;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
