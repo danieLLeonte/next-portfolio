@@ -9,20 +9,20 @@ import { workBackground } from "../assets";
 const people = [
   {
     name: "John Doe",
-    position: "CEO of Company",
+    position: "CEO of Tesla",
     image: "https://picsum.photos/200",
     testimonial:
       "Lorem111 ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc.",
   },
   {
     name: "John Doe",
-    position: "CEO of Company",
+    position: "CEO of SpaceX",
     testimonial:
       "Lorem222 ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc.",
   },
   {
     name: "John Doe",
-    position: "CEO of Company",
+    position: "CEO of Apple",
     image: "https://picsum.photos/200",
     testimonial:
       "Lorem333 ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc.",
@@ -45,14 +45,14 @@ const Testimonials = () => {
       <p className="body2 !leading-9 text-center lg:w-3/5 md:w-2/3 min-[430px]:w-4/5">
         {clickedPerson.testimonial}
       </p>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center gap-6">
         {people.map((person, index) => (
           <div
             key={index}
             className="flex flex-col items-center justify-center gap-2 text-center cursor-pointer"
             onClick={() => setClickedPerson(person)}
           >
-            <div className={person !== clickedPerson ? "opacity-50" : "ease"}>
+            <div className={person !== clickedPerson ? "opacity-50" : ""}>
               <Image
                 className="rounded-full"
                 src={workBackground}
@@ -61,14 +61,14 @@ const Testimonials = () => {
                 height={person !== clickedPerson ? 70 : 88}
               />
             </div>
-            <div className={person !== clickedPerson ? "opacity-0" : "ease"}>
-              <p className="mt-4 font-bold text-base md:text-2xl text-textPrimary">
-                {person.name}
-              </p>
-              <p className="body2">{person.position}</p>
-            </div>
           </div>
         ))}
+      </div>
+      <div className="text-cente -mt-12">
+        <p className="mt-4 font-bold text-base md:text-2xl text-textPrimary">
+          {clickedPerson.name}
+        </p>
+        <p className="body2">{clickedPerson.position}</p>
       </div>
     </div>
   );
