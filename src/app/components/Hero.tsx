@@ -1,8 +1,9 @@
 import Image from "next/image";
-import { AiFillMail, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 import { graphic, lineDirection } from "../assets";
 import AppWrap from "../wrapper/AppWrap";
+import Button from "./Button";
+import SocialLinks from "./SocialLinks";
 
 const Hero = () => {
   return (
@@ -25,17 +26,8 @@ const Hero = () => {
           currently working with React, Node, and MongoDB.
         </p>
         <div className="flex gap-11 items-center flex-col sm:flex-row">
-          <button
-            type="button"
-            className="bg-primary text-white font-bold text-sm py-5 px-11 rounded-full shadow-primary/50 shadow-md"
-          >
-            Contact Me
-          </button>
-          <div className="flex justify-between gap-x-10">
-            <AiFillMail className="icon" size={23} />
-            <AiFillLinkedin className="icon" size={23} />
-            <AiFillGithub className="icon" size={23} />
-          </div>
+          <Button />
+          <SocialLinks />
           <Image
             src={lineDirection}
             alt="line"
