@@ -1,20 +1,19 @@
 import AppWrap from "../wrapper/AppWrap";
 import WorkCard from "./WorkCard";
-import styles from "../styles";
 
 const Work = () => {
   return (
     <section className="flex items-center lg:justify-between flex-col lg:flex-row xl:h-screen-navbar h-auto 2xl:gap-20 gap-5">
       <div className="bg-textPrimary xl:w-[607px] lg:w-[500px] md:w-[600px] sm:w-[500px] xsm:w-[340px] w-[290px] lg:h-[593px] xl:p-28 xsm:p-12 p-8 rounded-2xl flex flex-col justify-center relative">
         <div className="h-3.5 w-3.5 bg-[#99E0FF] rounded-full absolute lg:right-24 lg:top-28 right-16 top-10" />
-        <h6 className={styles.heading6}>
+        <h6 className="heading6">
           Working <br />
           <span className="relative z-0">
             experience
             <span className="absolute sm:bottom-1 bottom-0.5 sm:-left-1 -left-0.5 -z-10 w-[70%] sm:h-3.5 h-3 bg-highlight/25"></span>
           </span>
         </h6>
-        <p className={`${styles.body2} mt-7`}>
+        <p className="body2 mt-7">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
           repellendus modi ratione doloribus asperiores accusantium! Ducimus,
           numquam quae, iure hic error assumenda ipsa nam totam eius maiores

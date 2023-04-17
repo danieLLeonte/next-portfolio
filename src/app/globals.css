@@ -47,3 +47,11 @@ html {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+
+.heading6 {
+  @apply font-bold md:text-4xl text-3xl text-white md:leading-[3.7rem] leading-10;
+}
+
+.body2 {
+  @apply font-medium md:text-base text-xs;
+}

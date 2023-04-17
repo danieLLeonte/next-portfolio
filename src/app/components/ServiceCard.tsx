@@ -1,7 +1,5 @@
 import { CgIfDesign } from "react-icons/cg";
 
-import styles from "../styles";
-
 const ServiceCard = ({ style="" }: { style?: string }) => {
   return (
     <div
@@ -14,7 +12,7 @@ const ServiceCard = ({ style="" }: { style?: string }) => {
         <h6 className="font-bold text-textPrimary xsm:text-2xl text-xl">
           UI Design
         </h6>
-        <p className={styles.body2}>
+        <p className="body2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo ex
           debitis alias eligendi. Autem odit repellendus minima soluta omnis.
         </p>
