@@ -64,8 +64,8 @@ const Testimonials = () => {
           </div>
         ))}
       </div>
-      <div className="text-cente -mt-12">
-        <p className="mt-4 font-bold text-base md:text-2xl text-textPrimary">
+      <div className="text-cente -mt-12 text-center">
+        <p className="mt-4 mb-1 font-bold text-base md:text-2xl text-textPrimary">
           {clickedPerson.name}
         </p>
         <p className="body2">{clickedPerson.position}</p>
