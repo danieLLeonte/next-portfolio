@@ -5,29 +5,8 @@ import Image from "next/image";
 
 import AppWrap from "../wrapper/AppWrap";
 import { workBackground } from "../assets";
+import { people } from "../constants";
 
-const people = [
-  {
-    name: "John Doe",
-    position: "CEO of Tesla",
-    image: "https://picsum.photos/200",
-    testimonial:
-      "Lorem111 ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc.",
-  },
-  {
-    name: "John Doe",
-    position: "CEO of SpaceX",
-    testimonial:
-      "Lorem222 ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc.",
-  },
-  {
-    name: "John Doe",
-    position: "CEO of Apple",
-    image: "https://picsum.photos/200",
-    testimonial:
-      "Lorem333 ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc.",
-  },
-];
 
 const Testimonials = () => {
   const [clickedPerson, setClickedPerson] = useState(people[1]);
@@ -64,8 +43,8 @@ const Testimonials = () => {
           </div>
         ))}
       </div>
-      <div className="text-cente -mt-12">
-        <p className="mt-4 font-bold text-base md:text-2xl text-textPrimary">
+      <div className="text-cente -mt-12 text-center">
+        <p className="mt-4 mb-1 font-bold text-base md:text-2xl text-textPrimary">
           {clickedPerson.name}
         </p>
         <p className="body2">{clickedPerson.position}</p>

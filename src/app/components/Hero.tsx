@@ -1,41 +1,43 @@
 import Image from "next/image";
-import { AiFillMail, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 import { graphic, lineDirection } from "../assets";
 import AppWrap from "../wrapper/AppWrap";
+import Button from "./Button";
+import SocialLinks from "./SocialLinks";
 
-const Hero = () => {
+async function getData() {
+  const res = await fetch(`${process.env.API_URL}/api/homepage`, {
+    cache: "no-store",
+  });
+  return res.json();
+}
+
+const Hero = async () => {
+  const data = await getData();
+  if (!data) return <div>loading...</div>;
+  const { name, title, location, about, gmail, linkedin, github } =
+    data.data.attributes;
+
   return (
     <section className="flex justify-between flex-col lg:flex-row gap-20 items-center mt-24 lg:mt-0 lg:h-screen-navbar">
       <div className="flex-1 flex flex-col gap-y-9 items-center lg:items-start">
         <h2 className="font-bold uppercase text-primary tracking-[.5em] text-xs sm:text-base">
-          Hi, I am Daniel
+          Hi, I am {name}
         </h2>
         <h1 className="sm:font-bold font-[800] sm:text-[4rem] text-4xl text-textPrimary sm:leading-[5.4rem] leading-[155%] text-center lg:text-left">
           Professional <br />
           <span className="relative z-0">
-            Web Developer
+            {title}
             <span className="absolute bottom-0 left-0 -z-10 w-full sm:h-7 h-5 bg-highlight"></span>
           </span>
-          <br /> based in USA
+          <br /> based in {location}
         </h1>
         <p className="sm:font-medium font-semibold sm:text-base text-xs sm:leading-9 leading-7 text-center lg:text-left">
-          I am a professional web developer with 2+ years of experience. I have
-          a passion for creating beautiful and functional websites. I am
-          currently working with React, Node, and MongoDB.
+          {about}
         </p>
         <div className="flex gap-11 items-center flex-col sm:flex-row">
-          <button
-            type="button"
-            className="bg-primary text-white font-bold text-sm py-5 px-11 rounded-full shadow-primary/50 shadow-md"
-          >
-            Contact Me
-          </button>
-          <div className="flex justify-between gap-x-10">
-            <AiFillMail className="icon" size={23} />
-            <AiFillLinkedin className="icon" size={23} />
-            <AiFillGithub className="icon" size={23} />
-          </div>
+          <Button />
+          <SocialLinks gmail={gmail} linkedin={linkedin} github={github} />
           <Image
             src={lineDirection}
             alt="line"
@@ -56,4 +58,5 @@ const Hero = () => {
   );
 };
 
+// @ts-expect-error Async Server Component
 export default AppWrap(Hero, "hero", "bg-secondary !pt-0");
