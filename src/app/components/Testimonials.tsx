@@ -33,7 +33,7 @@ const Testimonials = () => {
   const [clickedPerson, setClickedPerson] = useState(people[1]);
 
   return (
-    <div className="flex flex-col items-center justify-center xl:h-screen-navbar h-auto gap-[3.8rem]">
+    <section className="flex flex-col items-center justify-center xl:h-screen-navbar h-auto gap-[3.8rem]">
       <h2 className="mt-1.5 font-bold sm:text-[2.5rem] text-3xl text-textPrimary sm:leading-[5.4rem] leading-10 text-center sm:text-left">
         What{" "}
         <span className="relative z-0">
@@ -70,7 +70,7 @@ const Testimonials = () => {
         </p>
         <p className="body2">{clickedPerson.position}</p>
       </div>
-    </div>
+    </section>
   );
 };
 
