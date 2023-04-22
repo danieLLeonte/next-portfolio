@@ -9,9 +9,8 @@ export const ContactUs = () => {
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const currentForm = e.target;
-    console.log(currentForm)
-    return;
+    const currentForm = form.current;
+    if (!currentForm) return;
 
     emailjs
       .sendForm(
