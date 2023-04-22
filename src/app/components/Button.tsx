@@ -5,7 +5,7 @@ import { ContactMe } from "./ContactMe";
 import { Modal } from "./Modal";
 
 const Button = ({ style }: { style?: string }) => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
