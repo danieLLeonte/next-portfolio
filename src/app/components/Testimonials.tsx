@@ -1,12 +1,10 @@
 "use client";
-
 import { useState } from "react";
 import Image from "next/image";
 
 import AppWrap from "../wrapper/AppWrap";
 import { workBackground } from "../assets";
 import { people } from "../constants";
-
 
 const Testimonials = () => {
   const [clickedPerson, setClickedPerson] = useState(people[1]);
