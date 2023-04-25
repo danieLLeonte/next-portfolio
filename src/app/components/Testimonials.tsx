@@ -7,7 +7,6 @@ import AppWrap from "../wrapper/AppWrap";
 import { workBackground } from "../assets";
 import { people } from "../constants";
 
-
 const Testimonials = () => {
   const [clickedPerson, setClickedPerson] = useState(people[1]);
 
