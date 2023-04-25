@@ -5,10 +5,8 @@ import { HiX } from "react-icons/hi";
 import { BiMenuAltRight } from "react-icons/bi";
 import { motion } from "framer-motion";
 
-import { logo, resume } from "../assets";
-import { Modal } from "./Modal";
+import { logo } from "../assets";
 import { useState } from "react";
-import PdfViewer from "./PdfViewer";
 import { AiOutlineDownload } from "react-icons/ai";
 
 const links = [
@@ -48,7 +46,9 @@ const Navbar = ({
 
   return (
     <nav className="flex flex-1 justify-between items-center max-w-[1440px] mx-auto px-8 sm:px-12 lg:px-24">
-      <Image src={logo} alt="logo" width={45} height={45} />
+      <div className="w-[123px]">
+        <Image src={logo} alt="logo" width={45} height={45} />
+      </div>
       <ul className="justify-between gap-x-9 text-xs hidden sm:flex">
         {links.map((link, index) => (
           <li key={index} className={getLinkColor(pathName, link.path)}>

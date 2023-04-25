@@ -1,6 +1,14 @@
 import { CgIfDesign } from "react-icons/cg";
 
-const ServiceCard = ({ style="" }: { style?: string }) => {
+const ServiceCard = ({
+  style = "",
+  title,
+  description,
+}: {
+  style?: string;
+  title: string;
+  description: string;
+}) => {
   return (
     <div
       className={`service-card ease bg-secondary rounded-lg p-8 flex flex-col justify-between gap-14 ${style}`}
@@ -10,12 +18,9 @@ const ServiceCard = ({ style="" }: { style?: string }) => {
       </div>
       <div className="content-container ease flex flex-col gap-y-5">
         <h6 className="font-bold text-textPrimary xsm:text-2xl text-xl">
-          UI Design
+          {title}
         </h6>
-        <p className="body2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo ex
-          debitis alias eligendi. Autem odit repellendus minima soluta omnis.
-        </p>
+        <p className="body2">{description}</p>
       </div>
     </div>
   );

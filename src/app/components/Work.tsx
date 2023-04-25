@@ -1,3 +1,4 @@
+import { workExperience } from "../constants";
 import AppWrap from "../wrapper/AppWrap";
 import WorkCard from "./WorkCard";
 
@@ -14,10 +15,8 @@ const Work = () => {
           </span>
         </h6>
         <p className="body2 mt-7">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
-          repellendus modi ratione doloribus asperiores accusantium! Ducimus,
-          numquam quae, iure hic error assumenda ipsa nam totam eius maiores
-          exercitationem, rerum dolorem.
+          I have been working as a freelance web developer for 2 years. I have
+          worked with many clients and have completed many projects.
         </p>
         <div className="h-11 w-11 bg-white rounded-full absolute right-[9.6rem] bottom-[6rem] hidden min-[1400px]:block">
           <div className="h-[70px] w-[70px] border border-white/20 rounded-full absolute -left-[0.8rem] -top-[0.8rem]" />
@@ -26,10 +25,9 @@ const Work = () => {
         <div className="pacman absolute lg:left-[6.7rem] lg:bottom-8 left-42 bottom-3" />
       </div>
       <div className="lg:gap-[35px] gap-6 flex flex-col">
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
+        {workExperience.reverse().map((item, index) => (
+          <WorkCard key={index} {...item} />
+        ))}
       </div>
     </section>
   );
