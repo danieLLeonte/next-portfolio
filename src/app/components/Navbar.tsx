@@ -6,6 +6,10 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { motion } from "framer-motion";
 
 import { logo, resume } from "../assets";
+import { Modal } from "./Modal";
+import { useState } from "react";
+import PdfViewer from "./PdfViewer";
+import { AiOutlineDownload } from "react-icons/ai";
 
 const links = [
   {
@@ -40,6 +44,8 @@ const Navbar = ({
   toggle,
   pathName,
 }: NavbarProps) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav className="flex flex-1 justify-between items-center max-w-[1440px] mx-auto px-8 sm:px-12 lg:px-24">
       <Image src={logo} alt="logo" width={45} height={45} />
@@ -85,17 +91,26 @@ const Navbar = ({
                   </Link>
                 </li>
               ))}
-              <div className="p-2 rounded-full bg-primary shadow-primary/50 shadow-md cursor-pointer flex justify-around w-36 ml-8 items-center">
-                <Image src={resume} width={29} height={29} alt="resume" />
+              <a
+                href="/resume.pdf"
+                download="Daniel_Leonte_CV.pdf"
+                className="p-2 rounded-full bg-primary shadow-primary/50 shadow-md flex justify-around items-center gap-0.5 px-2.5 w-32 ml-8"
+              >
+                <AiOutlineDownload className="w-6 h-6 text-white" />
                 <p className="text-white text-center">Resume</p>
-              </div>
+              </a>
             </ul>
           </motion.div>
         )}
       </div>
-      <div className="p-2 rounded-full bg-primary shadow-primary/50 shadow-md cursor-pointer hidden sm:flex">
-        <Image src={resume} width={29} height={29} alt="resume" />
-      </div>
+      <a
+        href="/resume.pdf"
+        download="Daniel_Leonte_CV.pdf"
+        className="p-2 px-3 rounded-full bg-primary shadow-primary/50 shadow-md hidden sm:flex gap-1 items-center"
+      >
+        <AiOutlineDownload className="w-6 h-6 text-white" />
+        <p className="text-white text-center">Resume</p>
+      </a>
     </nav>
   );
 };
