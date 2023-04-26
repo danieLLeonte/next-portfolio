@@ -34,7 +34,7 @@ const Navbar = ({
       <div className="w-[123px]">
         <Image src={logo} alt="logo" width={45} height={45} />
       </div>
-      <ul className="justify-between gap-x-9 text-xs hidden sm:flex">
+      <ul className="justify-between gap-x-9 text-xs hidden md:flex">
         {links.map((link, index) => (
           <li key={index} className={getLinkColor(pathName, link.path)}>
             <Link
@@ -46,7 +46,7 @@ const Navbar = ({
           </li>
         ))}
       </ul>
-      <div className="block sm:hidden">
+      <div className="block md:hidden">
         <BiMenuAltRight
           className="-mr-2 h-14 w-14 text-black"
           onClick={() => setToggle(true)}
@@ -91,7 +91,7 @@ const Navbar = ({
       <a
         href="/resume.pdf"
         download="Daniel_Leonte_CV.pdf"
-        className="p-2 px-3 rounded-full bg-primary shadow-primary/50 shadow-md hidden sm:flex gap-1 items-center"
+        className="p-2 px-3 rounded-full bg-primary shadow-primary/50 shadow-md hidden md:flex gap-1 items-center"
       >
         <AiOutlineDownload className="w-6 h-6 text-white" />
         <p className="text-white text-center">Resume</p>
