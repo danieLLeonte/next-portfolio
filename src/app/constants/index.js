@@ -71,6 +71,31 @@ export const workExperience = [
   },
 ];
 
+// Projects Section
+export const projects = [
+  {
+    id: 0,
+    title: "Real Estate Agency Website",
+    categories: ["UI/UX Design", "Development"],
+    image: "https://picsum.photos/200",
+    bgColor: "bg-[#56B0B9]",
+  },
+  {
+    id: 1,
+    title: "Property Agent Website",
+    categories: ["UI/UX Design", "Development"],
+    image: "https://picsum.photos/200",
+    bgColor: "bg-[#5F9FFE]",
+  },
+  {
+    id: 0,
+    title: "Movie Apps Mobile",
+    categories: ["UI/UX Design", "Development"],
+    image: "https://picsum.photos/200",
+    bgColor: "bg-[#1F1D2B]",
+  },
+];
+
 export const people = [
   {
     name: "John Doe",

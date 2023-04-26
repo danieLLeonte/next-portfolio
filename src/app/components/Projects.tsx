@@ -1,3 +1,4 @@
+import { projects } from "../constants";
 import AppWrap from "../wrapper/AppWrap";
 import ProjectCard from "./ProjectCard";
 
@@ -12,12 +13,12 @@ const Projects = () => {
         Projects
       </h2>
       <div className="lg:gap-[35px] gap-6 flex flex-col xl:w-full">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        {projects.map((project) => (
+          <ProjectCard key={project.id} {...project} />
+        ))}
       </div>
     </section>
   );
-}
+};
 
 export default AppWrap(Projects, "projects", "bg-white");
