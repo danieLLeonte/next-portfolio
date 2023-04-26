@@ -37,9 +37,10 @@ export const services = [
 // About Section - Work Experience
 export const workExperience = [
   {
-    title: "Indie Game Developer",
-    company: "Leo Games",
-    time: "2+ years",
+    id: 0,
+    title: "Full Stack Developer",
+    company: "JSM Masterclass",
+    time: "6 months",
     description: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -47,6 +48,7 @@ export const workExperience = [
     ],
   },
   {
+    id: 1,
     title: "Frontend Developer",
     company: "eJump Media",
     time: "1 year",
@@ -57,9 +59,10 @@ export const workExperience = [
     ],
   },
   {
-    title: "Full Stack Developer",
-    company: "JSM Masterclass",
-    time: "6 months",
+    id: 2,
+    title: "Indie Software Developer",
+    company: "Leo Games",
+    time: "2+ years",
     description: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
