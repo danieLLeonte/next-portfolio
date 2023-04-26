@@ -118,3 +118,22 @@ export const people = [
       "Lorem333 ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc.",
   },
 ];
+
+export const links = [
+  {
+    name: "Home",
+    path: "",
+  },
+  {
+    name: "About Me",
+    path: "#about",
+  },
+  {
+    name: "Work",
+    path: "#work",
+  },
+  {
+    name: "Projects",
+    path: "#projects",
+  },
+];

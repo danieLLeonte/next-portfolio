@@ -1,29 +1,14 @@
 "use client";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { HiX } from "react-icons/hi";
+import { AiOutlineDownload } from "react-icons/ai";
 import { BiMenuAltRight } from "react-icons/bi";
+import { HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 
 import { logo } from "../assets";
-import { useState } from "react";
-import { AiOutlineDownload } from "react-icons/ai";
-
-const links = [
-  {
-    name: "Home",
-    path: "",
-  },
-  {
-    name: "About Me",
-    path: "#about",
-  },
-  {
-    name: "Projects",
-    path: "#projects",
-  },
-];
-
+import { links } from "../constants";
 interface NavbarProps {
   getLinkColor: (pathname: string, link: string) => string;
   handleLinkClick: (

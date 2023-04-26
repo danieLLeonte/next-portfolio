@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+
 import { workExperience } from "../constants";
 import AppWrap from "../wrapper/AppWrap";
 import WorkCard from "./WorkCard";
@@ -7,7 +8,7 @@ import WorkCard from "./WorkCard";
 const Work = () => {
   const [selectedWork, setSelectedWork] = useState(0);
   return (
-    <section className="flex items-center lg:justify-between flex-col lg:flex-row h-auto gap-5 pt-20">
+    <section className="flex items-center lg:justify-between flex-col lg:flex-row lg:h-screen-navbar pt-32 gap-5">
       <div className="bg-textPrimary xl:w-[607px] lg:w-[500px] md:w-[600px] sm:w-[500px] xsm:w-[340px] w-[290px] lg:h-[593px] xl:p-28 xsm:p-12 p-8 rounded-2xl flex flex-col justify-center relative">
         <div className="h-3.5 w-3.5 bg-[#99E0FF] rounded-full absolute lg:right-24 lg:top-28 right-16 top-10" />
         <h6 className="heading6">

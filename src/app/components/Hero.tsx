@@ -44,7 +44,7 @@ const Hero = () => {
         alt="hero"
         width={650}
         height={650}
-        className="flex-1 object-contain grow lg:grow-0 xl:grow min-w-[330px] rounded-full border-8 shadow-2xl shadow-textSecondary/50"
+        className="flex-1 object-contain grow lg:grow-0 xl:grow min-w-[310px] rounded-full border-8 shadow-2xl shadow-textSecondary/50"
       />
     </section>
   );
