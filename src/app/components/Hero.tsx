@@ -13,10 +13,10 @@ const Hero = () => {
   return (
     <section className="flex justify-between flex-col lg:flex-row gap-20 items-center mt-24 lg:mt-0 lg:h-screen-navbar">
       <div className="flex-1 flex flex-col gap-y-9 items-center lg:items-start">
-        <h2 className="font-bold uppercase text-primary tracking-[.5em] text-xs sm:text-base">
+        <h2 className="font-bold uppercase text-primary tracking-[.5em] text-xs laptop:text-base">
           Hi, I am {name}
         </h2>
-        <h1 className="sm:font-bold font-[800] sm:text-[4rem] text-4xl text-textPrimary sm:leading-[5.4rem] leading-[155%] text-center lg:text-left">
+        <h1 className="sm:font-bold font-[800] xl:text-[4rem] md:text-[3rem] text-4xl text-textPrimary xl:leading-[5.4rem] leading-[155%] text-center lg:text-left">
           Professional <br />
           <span className="relative z-0">
             {title}
@@ -24,7 +24,7 @@ const Hero = () => {
           </span>
           <br /> based in {location}
         </h1>
-        <p className="sm:font-medium font-semibold sm:text-base text-xs sm:leading-9 leading-7 text-center lg:text-left">
+        <p className="laptop:font-medium font-semibold laptop:text-base sm:px-20 lg:px-0 text-xs laptop:leading-9 leading-7 text-center lg:text-left">
           {about}
         </p>
         <div className="flex gap-11 items-center flex-col sm:flex-row">
@@ -35,7 +35,7 @@ const Hero = () => {
             alt="line"
             width={100}
             height={100}
-            className="hidden sm:block"
+            className="hidden xl:block"
           />
         </div>
       </div>
@@ -44,7 +44,7 @@ const Hero = () => {
         alt="hero"
         width={650}
         height={650}
-        className="flex-1 object-contain grow lg:grow-0 xl:grow min-w-[310px] rounded-full border-8 shadow-2xl shadow-textSecondary/50"
+        className="flex-1 object-contain grow lg:grow xsm:max-w-sm md:max-w-md min-[1360px]:max-w-none min-w-[310px] rounded-full border-8 shadow-2xl shadow-textSecondary/50"
       />
     </section>
   );
