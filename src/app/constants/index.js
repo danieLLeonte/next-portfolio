@@ -74,21 +74,21 @@ export const workExperience = [
 // Projects Section
 export const projects = [
   {
-    id: 0,
+    id: 1,
     title: "Real Estate Agency Website",
     categories: ["UI/UX Design", "Development"],
     image: "https://picsum.photos/200",
     bgColor: "bg-[#56B0B9]",
   },
   {
-    id: 1,
+    id: 2,
     title: "Property Agent Website",
     categories: ["UI/UX Design", "Development"],
     image: "https://picsum.photos/200",
     bgColor: "bg-[#5F9FFE]",
   },
   {
-    id: 0,
+    id: 3,
     title: "Movie Apps Mobile",
     categories: ["UI/UX Design", "Development"],
     image: "https://picsum.photos/200",

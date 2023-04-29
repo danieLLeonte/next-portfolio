@@ -6,11 +6,13 @@ import { FaGithub } from "react-icons/fa";
 import { arrow, mockup } from "../assets";
 
 const ProjectCard = ({
+  id,
   title,
   categories,
   image,
   bgColor,
 }: {
+  id: string;
   title: string;
   categories: string[];
   image: string;
@@ -42,7 +44,7 @@ const ProjectCard = ({
             <FaGithub />
           </div> */}
           <Link
-            href="/case-study"
+            href={`/case-study/${id}`}
             className="font-bold flex items-center gap-2"
           >
             <p>See Detail Project</p>
