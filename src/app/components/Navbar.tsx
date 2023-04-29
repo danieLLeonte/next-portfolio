@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { AiOutlineDownload } from "react-icons/ai";
@@ -12,7 +11,7 @@ import { links } from "../constants";
 interface NavbarProps {
   getLinkColor: (pathname: string, link: string) => string;
   handleLinkClick: (
-    e: React.MouseEvent<HTMLAnchorElement>,
+    e: React.MouseEvent<HTMLAnchorElement> | React.MouseEvent<HTMLImageElement>,
     link: string
   ) => void;
   setToggle: (toggle: boolean) => void;
@@ -27,12 +26,16 @@ const Navbar = ({
   toggle,
   pathName,
 }: NavbarProps) => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <nav className="flex flex-1 justify-between items-center max-w-[1440px] mx-auto px-8 sm:px-12 lg:px-24">
       <div className="w-[123px]">
-        <Image src={logo} alt="logo" width={45} height={45} />
+        <Image
+          src={logo}
+          alt="logo"
+          width={45}
+          height={45}
+          onClick={(e) => handleLinkClick(e, "")}
+        />
       </div>
       <ul className="justify-between gap-x-9 text-xs hidden md:flex">
         {links.map((link, index) => (
