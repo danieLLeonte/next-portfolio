@@ -4,7 +4,7 @@ export const hero = {
   title: "Web Developer",
   location: "RO",
   about:
-    "I am a professional web developer with 1+ years of experience. I have a passion for creating beautiful and functional websites. I am currently working with React, Node, and MongoDB.",
+    "I am a dedicated web developer with 1+ years of experience. I have a passion for creating beautiful and functional websites. I am currently working with React, Node, and MongoDB.",
   gmail: "lgsoftware99@gmail.com",
   linkedin: "https://www.linkedin.com/in/daniel-leonte/",
   github: "https://github.com/danieLLeonte",
