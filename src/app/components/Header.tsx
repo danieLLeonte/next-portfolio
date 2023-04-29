@@ -12,7 +12,7 @@ const Header = () => {
   const [toggle, setToggle] = useState<boolean>(false);
 
   const handleLinkClick = (
-    e: React.MouseEvent<HTMLAnchorElement>,
+    e: React.MouseEvent<HTMLAnchorElement> | React.MouseEvent<HTMLDivElement>,
     link: string
   ) => {
     if (link === "") {
