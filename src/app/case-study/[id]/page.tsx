@@ -99,12 +99,12 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
             <p>{descriptionStack2}</p>
           </div>
         </div>
-        <div className="flex justify-between w-full items-center">
+        <div className="flex justify-between w-full items-center flex-wrap md:flex-nowrap">
           <div>
-            <Image src={mockupCS1} width={500} height={500} alt={"mockup1"} />
-            <Image src={mockupCS2} width={600} height={600} alt={"mockup2"} />
+            <Image src={mockupCS1} className="md:w-[85%]" alt={"mockup1"} />
+            <Image src={mockupCS2} className="md:w-[85%]" alt={"mockup2"} />
           </div>
-          <Image src={mockupCS3} width={700} height={700} alt={"mockup3"} />
+          <Image src={mockupCS3} className="md:w-[51%]" alt={"mockup3"} />
         </div>
         <div className="sm:text-center sm:w-2/3 mx-auto flex flex-col gap-6">
           <h2 className="font-bold sm:text-[1.7rem] text-xl text-textPrimary sm:leading-[3.9rem] leading-10">
