@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 import AppWrap from "../wrapper/AppWrap";
-import { workBackground } from "../assets";
+import { mars } from "../assets";
 import { people } from "../constants";
 
 const Testimonials = () => {
@@ -38,7 +38,7 @@ const Testimonials = () => {
             >
               <Image
                 className="rounded-full"
-                src={workBackground}
+                src={mars}
                 alt={person.name}
                 width={70}
                 height={70}
