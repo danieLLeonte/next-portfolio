@@ -30,8 +30,30 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
     descriptionProblems1,
     descriptionProblems2,
   } = caseStudies[params.id];
-
   const otherProjects = projects.filter((project) => project.id != params.id);
+
+  const SectionTitle = ({ title }: { title: string }) => (
+    <h2 className="font-bold sm:text-[1.7rem] text-xl text-textPrimary sm:leading-[3.9rem] leading-10">
+      {title}
+    </h2>
+  );
+
+  const ProjectCard = ({ project }: { project: (typeof projects)[0] }) => (
+    <div key={project.id} className="flex flex-col justify-start gap-3.5">
+      <Image src={workBackground} alt={"project1"} />
+      <h6 className="mt-2 font-bold sm:text-[2.2rem] text-xl text-textPrimary leading-10">
+        {project.title}
+      </h6>
+      <p className="w-2/3">{project.description}</p>
+      <Link
+        href={`/case-study/${project.id}`}
+        className="font-bold text-textPrimary uppercase flex items-center gap-1"
+      >
+        View Project
+        <IoIosArrowForward />
+      </Link>
+    </div>
+  );
 
   return (
     <>
@@ -73,11 +95,8 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
         </div>
         <Image src={mockupCS} alt={title + " hero"} />
         <div className="flex flex-col gap-6">
-          <h2 className="font-bold sm:text-[1.7rem] text-xl text-textPrimary sm:leading-[3.9rem] leading-10">
-            Project Purpose and Goal
-          </h2>
+          <SectionTitle title="Project Purpose and Goal" />
           <p className="sm:w-2/3">{descriptionPurpose1}</p>
-          {/* <br /> */}
           <p className="sm:w-2/3">{descriptionPurpose2}</p>
         </div>
         <div className="flex justify-between items-center flex-col sm:flex-row sm:gap-20 gap-10">
@@ -93,11 +112,8 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
             ))}
           </div>
           <div className="basis-1/2 flex flex-col gap-6">
-            <h2 className="font-bold sm:text-[1.7rem] text-xl text-textPrimary sm:leading-[3.9rem] leading-10">
-              Web Stack and Explanation
-            </h2>
+            <SectionTitle title="Web Stack and Explanation" />
             <p>{descriptionStack1}</p>
-            {/* <br /> */}
             <p>{descriptionStack2}</p>
           </div>
         </div>
@@ -109,18 +125,13 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
           <Image src={mockupCS3} className="md:w-[51%]" alt={"mockup3"} />
         </div>
         <div className="sm:text-center sm:w-2/3 mx-auto flex flex-col gap-6">
-          <h2 className="font-bold sm:text-[1.7rem] text-xl text-textPrimary sm:leading-[3.9rem] leading-10">
-            Problems and Thought Process
-          </h2>
+          <SectionTitle title="Problems and Thought Process" />
           <p>{descriptionProblems1}</p>
-          {/* <br /> */}
           <p>{descriptionProblems2}</p>
         </div>
         <Image src={mockupCS1} alt={"mockup4"} className="mx-auto" />
         <div className="flex flex-col gap-6">
-          <h2 className="font-bold sm:text-[1.7rem] text-xl text-textPrimary sm:leading-[3.9rem] leading-10">
-            Lessons Learned
-          </h2>
+          <SectionTitle title="Lessons Learned" />
           <p className="sm:w-2/3">{descriptionPurpose1}</p>
         </div>
       </motion.div>
@@ -135,23 +146,7 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
           </h2>
           <div className="flex justify-between gap-x-16 gap-y-14 -mt-8 flex-col sm:flex-row">
             {otherProjects.map((project) => (
-              <div
-                key={project.id}
-                className="flex flex-col justify-start gap-3.5"
-              >
-                <Image src={workBackground} alt={"project1"} />
-                <h6 className="mt-2 font-bold sm:text-[2.2rem] text-xl text-textPrimary leading-10">
-                  {project.title}
-                </h6>
-                <p className="w-2/3">{project.description}</p>
-                <Link
-                  href={`/case-study/${project.id}`}
-                  className="font-bold text-textPrimary uppercase flex items-center gap-1"
-                >
-                  View Project
-                  <IoIosArrowForward />
-                </Link>
-              </div>
+              <ProjectCard key={project.id} project={project} />
             ))}
           </div>
         </div>
