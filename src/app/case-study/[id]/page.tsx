@@ -36,14 +36,14 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
       <motion.div
         whileInView={{ opacity: [0, 0, 1] }}
         transition={{ duration: 0.5 }}
-        className="sm:py-28 py-24 xl:py-0 max-w-[1440px] mx-auto px-8 sm:px-12 lg:px-24 mt-24 flex flex-col gap-14 items-center justify-center sm:justify-start sm:items-start"
+        className="sm:pt-28 py-24 lg:pt-10 max-w-[1440px] mx-auto px-7 xsm:px-12 sm:px-12 lg:px-24 mt-2 lg:mt-24 flex flex-col gap-14 sm:gap-18 lg:gap-32 items-center justify-center sm:justify-start sm:items-start"
       >
         <div className="flex flex-col gap-8">
-          <h1 className="font-bold sm:text-[2.5rem] text-3xl text-textPrimary sm:leading-[5rem] leading-10 text-center sm:text-left">
+          <h1 className="font-bold sm:text-[2.5rem] text-3xl text-textPrimary sm:leading-[5rem] leading-[3rem] mb-4 sm:bg-0">
             {title}
           </h1>
-          <p className="w-2/3">{description}</p>
-          <div className="flex gap-32">
+          <p className="sm:w-2/3">{description}</p>
+          <div className="w-full flex sm:gap-32 justify-between sm:justify-start flex-wrap gap-2">
             <div className="flex flex-col gap-4">
               <p className="font-bold text-textPrimary">Type</p>
               <p className="font-medium">{type}</p>
@@ -74,11 +74,11 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
           <h2 className="font-bold sm:text-[1.7rem] text-xl text-textPrimary sm:leading-[3.9rem] leading-10">
             Project Purpose and Goal
           </h2>
-          <p className="w-2/3">{descriptionPurpose1}</p>
+          <p className="sm:w-2/3">{descriptionPurpose1}</p>
           {/* <br /> */}
-          <p className="w-2/3">{descriptionPurpose2}</p>
+          <p className="sm:w-2/3">{descriptionPurpose2}</p>
         </div>
-        <div className="flex justify-between items-center gap-20">
+        <div className="flex justify-between items-center flex-col sm:flex-row sm:gap-20 gap-10">
           <div className="flex flex-col items-center gap-8 basis-1/2">
             {stackBox.map((item) => (
               <div
@@ -106,7 +106,7 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
           </div>
           <Image src={mockupCS3} width={700} height={700} alt={"mockup3"} />
         </div>
-        <div className="text-center px-48 flex flex-col gap-6">
+        <div className="sm:text-center sm:w-2/3 mx-auto flex flex-col gap-6">
           <h2 className="font-bold sm:text-[1.7rem] text-xl text-textPrimary sm:leading-[3.9rem] leading-10">
             Problems and Thought Process
           </h2>
@@ -119,11 +119,11 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
           <h2 className="font-bold sm:text-[1.7rem] text-xl text-textPrimary sm:leading-[3.9rem] leading-10">
             Lessons Learned
           </h2>
-          <p className="w-2/3">{descriptionPurpose1}</p>
+          <p className="sm:w-2/3">{descriptionPurpose1}</p>
         </div>
       </motion.div>
-      <div className="bg-white w-full mt-32 pb-24 py-0.5">
-        <div className="sm:py-28 py-24 xl:py-0 max-w-[1440px] mx-auto px-8 sm:px-12 lg:px-24 mt-24 flex flex-col gap-28 items-center justify-center sm:justify-start sm:items-start">
+      <div className="bg-white w-full xl:mt-32 sm:pb-24 xl:py-0.5">
+        <div className="py-24 xl:pt-0 max-w-[1440px] mx-auto px-7 xsm:px-12 sm:px-12 lg:px-24 mt-2 lg:mt-24 flex flex-col gap-14 sm:gap-18 lg:gap-32 items-center justify-center sm:justify-start sm:items-start">
           <h2 className="font-bold sm:text-[2.5rem] text-3xl text-textPrimary sm:leading-[5rem] leading-10 text-center sm:text-left">
             Other{" "}
             <span className="relative z-0">
@@ -131,7 +131,7 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
               <span className="absolute sm:bottom-1 bottom-0.5 sm:-left-1 -left-0.5 -z-10 w-[105%] sm:h-3.5 h-3 bg-highlight"></span>
             </span>
           </h2>
-          <div className="flex justify-between gap-10 -mt-8">
+          <div className="flex justify-between gap-10 gap-y-14 -mt-8 flex-col sm:flex-row">
             <div className="flex flex-col justify-start gap-3.5">
               <Image src={workBackground} alt={"project1"} />
               <h6 className="mt-2 font-bold sm:text-[2.2rem] text-xl text-textPrimary leading-10">
