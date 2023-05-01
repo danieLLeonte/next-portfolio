@@ -3,20 +3,26 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 
-import { fakeData } from "@/app/constants";
+import { caseStudies } from "@/app/constants";
 import { mockup } from "@/app/assets";
 
-const CaseStudyPage = ({ params }: { params: { id: string } }) => {
+const CaseStudyPage = ({ params }: { params: { id: number } }) => {
+  if (!caseStudies[params.id]) return null;
+
   const {
     title,
     description,
     type,
     stack,
     live,
-    descriptionPurpose,
+    descriptionPurpose1,
+    descriptionPurpose2,
     stackBox,
-    descriptionStack,
-  } = fakeData;
+    descriptionStack1,
+    descriptionStack2,
+    descriptionProblems1,
+    descriptionProblems2,
+  } = caseStudies[params.id];
 
   return (
     <>
@@ -56,7 +62,9 @@ const CaseStudyPage = ({ params }: { params: { id: string } }) => {
           <h2 className="font-bold sm:text-[1.7rem] text-xl text-textPrimary sm:leading-[5.4rem] leading-10">
             Project Purpose and Goal
           </h2>
-          <p className="w-2/3">{descriptionPurpose}</p>
+          <p className="w-2/3">{descriptionPurpose1}</p>
+          <br />
+          <p className="w-2/3">{descriptionPurpose2}</p>
         </div>
         <div className="flex justify-between items-center gap-20">
           <div className="flex flex-col items-center gap-8 basis-1/2">
@@ -74,7 +82,9 @@ const CaseStudyPage = ({ params }: { params: { id: string } }) => {
             <h2 className="font-bold sm:text-[1.7rem] text-xl text-textPrimary sm:leading-[5.4rem] leading-10">
               Web Stack and Explanation
             </h2>
-            <p className="">{descriptionStack}</p>
+            <p className="">{descriptionStack1}</p>
+            <br />
+            <p className="">{descriptionStack2}</p>
           </div>
         </div>
         <div className="flex justify-between w-full">
@@ -88,14 +98,16 @@ const CaseStudyPage = ({ params }: { params: { id: string } }) => {
           <h2 className="font-bold sm:text-[1.7rem] text-xl text-textPrimary sm:leading-[5.4rem] leading-10">
             Problems and Thought Process
           </h2>
-          <p>{descriptionPurpose}</p>
+          <p>{descriptionProblems1}</p>
+          <br />
+          <p>{descriptionProblems2}</p>
         </div>
         <Image src={mockup} alt={title + " hero"} className="mx-auto" />
         <div>
           <h2 className="font-bold sm:text-[1.7rem] text-xl text-textPrimary sm:leading-[5.4rem] leading-10">
             Lessons Learned
           </h2>
-          <p className="w-2/3">{descriptionPurpose}</p>
+          <p className="w-2/3">{descriptionPurpose1}</p>
         </div>
       </motion.div>
       <div className="bg-white w-full mt-24 py-0.5">

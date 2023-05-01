@@ -77,21 +77,21 @@ export const workExperience = [
 // Projects Section
 export const projects = [
   {
-    id: 1,
+    id: 0,
     title: "Real Estate Agency Website",
     categories: ["UI/UX Design", "Development"],
     image: "https://picsum.photos/200",
     bgColor: "bg-[#56B0B9]",
   },
   {
-    id: 2,
+    id: 1,
     title: "Property Agent Website",
     categories: ["UI/UX Design", "Development"],
     image: "https://picsum.photos/200",
     bgColor: "bg-[#5F9FFE]",
   },
   {
-    id: 3,
+    id: 2,
     title: "Movie Apps Mobile",
     categories: ["UI/UX Design", "Development"],
     image: "https://picsum.photos/200",
@@ -123,48 +123,68 @@ export const people = [
 ];
 
 // Case Studies
-export const fakeData = {
-  id: "1",
-  title: "Coffe By Benjamin",
-  description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+export const caseStudies = [
+  {
+    id: "1",
+    title: "Coffe By Benjamin",
+    description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
   aspernatur molestias porro fugiat id! Maxime consectetur hic
   necessitatibus quas accusantium expedita quod repudiandae molestiae eos
   eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
   labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
   facere modi placeat culpa. Sint, maiores.`,
-  type: "Internship",
-  stack: ["React", "Next.js", "Typescript", "Netlify", "MongoDB"],
-  live: "",
-  descriptionPurpose: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+    type: "Internship",
+    stack: ["React", "Next.js", "Typescript", "Netlify", "MongoDB"],
+    live: "",
+    descriptionPurpose1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
   aspernatur molestias porro fugiat id! Maxime consectetur hic
   necessitatibus quas accusantium expedita quod repudiandae molestiae eos
   eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
   labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
   facere modi placeat culpa. Sint, maiores.`,
-  stackBox: [
-    {
-      icon: <DiReact size={25} />,
-      name: "React",
-      color: "text-[#5ED3F3]",
-    },
-    {
-      icon: <TbBrandNextjs size={25} />,
-      name: "Next.js",
-      color: "text-[#000000]",
-    },
-    {
-      icon: <DiJavascript1 size={25} />,
-      name: "JavaScript",
-      color: "text-[#F0DB4F]",
-    },
-  ],
-  descriptionStack: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+    descriptionPurpose2: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  aspernatur molestias porro fugiat id! Maxime consectetur hic
+  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
+  eaque optio.`,
+    stackBox: [
+      {
+        icon: <DiReact size={25} />,
+        name: "React",
+        color: "text-[#5ED3F3]",
+      },
+      {
+        icon: <TbBrandNextjs size={25} />,
+        name: "Next.js",
+        color: "text-[#000000]",
+      },
+      {
+        icon: <DiJavascript1 size={25} />,
+        name: "JavaScript",
+        color: "text-[#F0DB4F]",
+      },
+    ],
+    descriptionStack1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
   aspernatur molestias porro fugiat id! Maxime consectetur hic
   necessitatibus quas accusantium expedita quod repudiandae molestiae eos
   eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
   labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
   facere modi placeat culpa. Sint, maiores.`,
-};
+    descriptionStack2: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  aspernatur molestias porro fugiat id! Maxime consectetur hic
+  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
+  eaque optio.`,
+    descriptionProblems1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  aspernatur molestias porro fugiat id! Maxime consectetur hic
+  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
+  eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
+  labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
+  facere modi placeat culpa. Sint, maiores.`,
+    descriptionProblems2: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  aspernatur molestias porro fugiat id! Maxime consectetur hic
+  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
+  eaque optio.`,
+  },
+];
 
 export const links = [
   {
