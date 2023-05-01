@@ -12,7 +12,7 @@ const ProjectCard = ({
   image,
   bgColor,
 }: {
-  id: string;
+  id: number;
   title: string;
   categories: string[];
   image: string;

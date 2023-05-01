@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
 
-import { caseStudies } from "@/app/constants";
+import { caseStudies, projects } from "@/app/constants";
 import {
   mockupCS,
   mockupCS1,
@@ -30,6 +30,8 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
     descriptionProblems1,
     descriptionProblems2,
   } = caseStudies[params.id];
+
+  const otherProjects = projects.filter((project) => project.id != params.id);
 
   return (
     <>
@@ -132,40 +134,25 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
             </span>
           </h2>
           <div className="flex justify-between gap-x-16 gap-y-14 -mt-8 flex-col sm:flex-row">
-            <div className="flex flex-col justify-start gap-3.5">
-              <Image src={workBackground} alt={"project1"} />
-              <h6 className="mt-2 font-bold sm:text-[2.2rem] text-xl text-textPrimary leading-10">
-                Decore
-              </h6>
-              <p className="w-2/3">
-                A tool design to hepl web developers build live, custom
-                templates & export code
-              </p>
-              <Link
-                href={live}
-                className="font-bold text-textPrimary uppercase flex items-center gap-1"
+            {otherProjects.map((project) => (
+              <div
+                key={project.id}
+                className="flex flex-col justify-start gap-3.5"
               >
-                View Project
-                <IoIosArrowForward />
-              </Link>
-            </div>
-            <div className="flex flex-col justify-start gap-3.5">
-              <Image src={workBackground} alt={"project2"} />
-              <h6 className="mt-2 font-bold sm:text-[2.2rem] text-xl text-textPrimary leading-10">
-                Decore
-              </h6>
-              <p className="w-2/3">
-                A tool design to hepl web developers build live, custom
-                templates & export code
-              </p>
-              <Link
-                href={live}
-                className="font-bold text-textPrimary uppercase flex items-center gap-1"
-              >
-                View Project
-                <IoIosArrowForward />
-              </Link>
-            </div>
+                <Image src={workBackground} alt={"project1"} />
+                <h6 className="mt-2 font-bold sm:text-[2.2rem] text-xl text-textPrimary leading-10">
+                  {project.title}
+                </h6>
+                <p className="w-2/3">{project.description}</p>
+                <Link
+                  href={`/case-study/${project.id}`}
+                  className="font-bold text-textPrimary uppercase flex items-center gap-1"
+                >
+                  View Project
+                  <IoIosArrowForward />
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
       </div>

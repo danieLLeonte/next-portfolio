@@ -1,7 +1,6 @@
 "use client";
 import {
   About,
-  Footer,
   Hero,
   Projects,
   Testimonials,

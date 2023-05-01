@@ -1,6 +1,8 @@
 import { DiJavascript1, DiReact } from "react-icons/di";
 import { TbBrandNextjs } from "react-icons/tb";
 
+import { workBackground } from "../assets";
+
 // Hero Section
 export const hero = {
   name: "Daniel",
@@ -80,21 +82,27 @@ export const projects = [
     id: 0,
     title: "Real Estate Agency Website",
     categories: ["UI/UX Design", "Development"],
-    image: "https://picsum.photos/200",
+    image: workBackground,
+    description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  aspernatur molestias porro fugiat id! Maxime consectetur hic`,
     bgColor: "bg-[#56B0B9]",
   },
   {
     id: 1,
     title: "Property Agent Website",
     categories: ["UI/UX Design", "Development"],
-    image: "https://picsum.photos/200",
+    image: workBackground,
+    description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  aspernatur molestias porro fugiat id! Maxime consectetur hic`,
     bgColor: "bg-[#5F9FFE]",
   },
   {
     id: 2,
     title: "Movie Apps Mobile",
     categories: ["UI/UX Design", "Development"],
-    image: "https://picsum.photos/200",
+    image: workBackground,
+    description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  aspernatur molestias porro fugiat id! Maxime consectetur hic`,
     bgColor: "bg-[#1F1D2B]",
   },
 ];
@@ -125,8 +133,129 @@ export const people = [
 // Case Studies
 export const caseStudies = [
   {
-    id: "1",
-    title: "Coffe By Benjamin",
+    id: 0,
+    title: "Real Estate Agency Website",
+    description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  aspernatur molestias porro fugiat id! Maxime consectetur hic
+  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
+  eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
+  labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
+  facere modi placeat culpa. Sint, maiores.`,
+    type: "Internship",
+    stack: ["React", "Next.js", "Typescript", "Netlify", "MongoDB"],
+    live: "",
+    descriptionPurpose1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  aspernatur molestias porro fugiat id! Maxime consectetur hic
+  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
+  eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
+  labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
+  facere modi placeat culpa. Sint, maiores.`,
+    descriptionPurpose2: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  aspernatur molestias porro fugiat id! Maxime consectetur hic
+  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
+  eaque optio.`,
+    stackBox: [
+      {
+        icon: <DiReact size={25} />,
+        name: "React",
+        color: "text-[#5ED3F3]",
+      },
+      {
+        icon: <TbBrandNextjs size={25} />,
+        name: "Next.js",
+        color: "text-[#000000]",
+      },
+      {
+        icon: <DiJavascript1 size={25} />,
+        name: "JavaScript",
+        color: "text-[#F0DB4F]",
+      },
+    ],
+    descriptionStack1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  aspernatur molestias porro fugiat id! Maxime consectetur hic
+  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
+  eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
+  labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
+  facere modi placeat culpa. Sint, maiores.`,
+    descriptionStack2: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  aspernatur molestias porro fugiat id! Maxime consectetur hic
+  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
+  eaque optio.`,
+    descriptionProblems1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  aspernatur molestias porro fugiat id! Maxime consectetur hic
+  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
+  eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
+  labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
+  facere modi placeat culpa. Sint, maiores.`,
+    descriptionProblems2: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  aspernatur molestias porro fugiat id! Maxime consectetur hic
+  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
+  eaque optio.`,
+  },
+
+  {
+    id: 1,
+    title: "Property Agent Website",
+    description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  aspernatur molestias porro fugiat id! Maxime consectetur hic
+  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
+  eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
+  labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
+  facere modi placeat culpa. Sint, maiores.`,
+    type: "Internship",
+    stack: ["React", "Next.js", "Typescript", "Netlify", "MongoDB"],
+    live: "",
+    descriptionPurpose1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  aspernatur molestias porro fugiat id! Maxime consectetur hic
+  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
+  eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
+  labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
+  facere modi placeat culpa. Sint, maiores.`,
+    descriptionPurpose2: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  aspernatur molestias porro fugiat id! Maxime consectetur hic
+  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
+  eaque optio.`,
+    stackBox: [
+      {
+        icon: <DiReact size={25} />,
+        name: "React",
+        color: "text-[#5ED3F3]",
+      },
+      {
+        icon: <TbBrandNextjs size={25} />,
+        name: "Next.js",
+        color: "text-[#000000]",
+      },
+      {
+        icon: <DiJavascript1 size={25} />,
+        name: "JavaScript",
+        color: "text-[#F0DB4F]",
+      },
+    ],
+    descriptionStack1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  aspernatur molestias porro fugiat id! Maxime consectetur hic
+  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
+  eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
+  labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
+  facere modi placeat culpa. Sint, maiores.`,
+    descriptionStack2: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  aspernatur molestias porro fugiat id! Maxime consectetur hic
+  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
+  eaque optio.`,
+    descriptionProblems1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  aspernatur molestias porro fugiat id! Maxime consectetur hic
+  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
+  eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
+  labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
+  facere modi placeat culpa. Sint, maiores.`,
+    descriptionProblems2: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  aspernatur molestias porro fugiat id! Maxime consectetur hic
+  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
+  eaque optio.`,
+  },
+  {
+    id: 2,
+    title: "Movie Apps Mobile",
     description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
   aspernatur molestias porro fugiat id! Maxime consectetur hic
   necessitatibus quas accusantium expedita quod repudiandae molestiae eos
