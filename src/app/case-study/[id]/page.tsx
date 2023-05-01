@@ -36,7 +36,7 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
       <motion.div
         whileInView={{ opacity: [0, 0, 1] }}
         transition={{ duration: 0.5 }}
-        className="sm:pt-28 py-24 lg:pt-10 max-w-[1440px] mx-auto px-7 xsm:px-12 sm:px-12 lg:px-24 mt-2 lg:mt-24 flex flex-col gap-14 sm:gap-18 lg:gap-32 items-center justify-center sm:justify-start sm:items-start"
+        className="py-24 lg:pt-8 max-w-[1440px] mx-auto px-7 xsm:px-12 sm:px-12 lg:px-24 mt-2 lg:mt-24 flex flex-col gap-14 sm:gap-18 lg:gap-32 items-center justify-center sm:justify-start sm:items-start"
       >
         <div className="flex flex-col gap-8">
           <h1 className="font-bold sm:text-[2.5rem] text-3xl text-textPrimary sm:leading-[5rem] leading-[3rem] mb-4 sm:bg-0">
