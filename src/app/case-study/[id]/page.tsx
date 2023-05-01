@@ -131,7 +131,7 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
               <span className="absolute sm:bottom-1 bottom-0.5 sm:-left-1 -left-0.5 -z-10 w-[105%] sm:h-3.5 h-3 bg-highlight"></span>
             </span>
           </h2>
-          <div className="flex justify-between gap-10 gap-y-14 -mt-8 flex-col sm:flex-row">
+          <div className="flex justify-between gap-x-16 gap-y-14 -mt-8 flex-col sm:flex-row">
             <div className="flex flex-col justify-start gap-3.5">
               <Image src={workBackground} alt={"project1"} />
               <h6 className="mt-2 font-bold sm:text-[2.2rem] text-xl text-textPrimary leading-10">
