@@ -1,8 +1,11 @@
+"use client";
 import AppWrap from "../wrapper/AppWrap";
 import Button from "./Button";
 import SocialLinks from "./SocialLinks";
+import { hero } from "../constants";
 
 const Footer = () => {
+  const { gmail, linkedin, github } = hero;
   return (
     <footer className="flex flex-col items-center justify-center h-auto gap-[3.125rem] md:pt-20 pt-12 xl:pb-12">
       <div className="bg-[#99E0FF] md:px-28 px-4 xsm:px-8 sm:py-16 py-12 rounded-3xl flex items-start flex-col w-full gap-8 relative overflow-hidden">
@@ -20,7 +23,7 @@ const Footer = () => {
         <Button style="!bg-white !text-textPrimary shadow-none z-0" />
       </div>
       <div className="flex justify-center">
-        <SocialLinks />
+        <SocialLinks gmail={gmail} linkedin={linkedin} github={github} />
       </div>
     </footer>
   );
