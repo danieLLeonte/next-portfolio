@@ -4,7 +4,7 @@ import { AiFillMail } from "react-icons/ai";
 
 export const ContactMe = () => {
   const form = useRef<HTMLFormElement>(null);
-  const [responseStatus, setResponseStatus] = useState(1); // 0 = not sent, 1 = sent, 2 = error
+  const [responseStatus, setResponseStatus] = useState(0); // 0 = not sent, 1 = sent, 2 = error
   const SERVICE_ID = "contact_service";
   const TEMPLATE_ID = "contact_form";
 
