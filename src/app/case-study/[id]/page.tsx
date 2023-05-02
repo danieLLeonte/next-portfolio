@@ -135,7 +135,7 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
           <p className="sm:w-2/3">{descriptionPurpose1}</p>
         </div>
       </motion.div>
-      <div className="bg-white w-full xl:mt-32 sm:pb-24 xl:py-0.5">
+      <div className="bg-white w-full xl:mt-32 xl:pb-14 xl:py-0.5">
         <div className="py-24 xl:pt-0 max-w-[1440px] mx-auto px-7 xsm:px-12 sm:px-12 lg:px-24 mt-2 lg:mt-24 flex flex-col gap-14 sm:gap-18 lg:gap-32 items-center justify-center sm:justify-start sm:items-start">
           <h2 className="font-bold sm:text-[2.5rem] text-3xl text-textPrimary sm:leading-[5rem] leading-10 text-center sm:text-left">
             Other{" "}

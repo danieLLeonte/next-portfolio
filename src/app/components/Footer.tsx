@@ -29,4 +29,4 @@ const Footer = () => {
   );
 };
 
-export default AppWrap(Footer, "footer", "bg-white");
+export default AppWrap(Footer, "footer", "bg-white !pt-0 !pb-10 xl:!pb-0");
