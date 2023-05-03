@@ -8,8 +8,28 @@ export const ContactMe = () => {
   const SERVICE_ID = "contact_service";
   const TEMPLATE_ID = "contact_form";
 
+  function validateInput(inputElement: HTMLInputElement) {
+    const value = inputElement.value.trim();
+    return value.length > 0;
+  }
+
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    const nameInput = document.getElementById("user_name") as HTMLInputElement;
+    const emailInput = document.getElementById(
+      "user_email"
+    ) as HTMLInputElement;
+    const messageInput = document.getElementById("message") as HTMLInputElement;
+
+    if (
+      !validateInput(nameInput) ||
+      !validateInput(emailInput) ||
+      !validateInput(messageInput)
+    ) {
+      alert("Please fill in all fields without only spaces or empty values.");
+      return;
+    }
 
     const currentForm = form.current;
     if (!currentForm) return;
@@ -50,6 +70,7 @@ export const ContactMe = () => {
         <div className="flex flex-col gap-1">
           <label>Name</label>
           <input
+            id="user_name"
             className="rounded-2xl p-2 px-3 border shadow-sm -ml-1"
             type="text"
             name="user_name"
@@ -59,6 +80,7 @@ export const ContactMe = () => {
         <div className="flex flex-col gap-1">
           <label>Email</label>
           <input
+            id="user_email"
             className="rounded-2xl p-2 px-3 border shadow-sm -ml-1"
             type="email"
             name="user_email"
@@ -68,6 +90,7 @@ export const ContactMe = () => {
         <div className="flex flex-col gap-1">
           <label>Message</label>
           <textarea
+            id="message"
             className="h-32 p-2 px-3 rounded-2xl shadow-sm border resize-none -ml-1"
             name="message"
             required
