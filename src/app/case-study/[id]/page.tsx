@@ -74,11 +74,11 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
             </div>
             <div className="flex flex-col gap-4">
               <p className="font-bold text-textPrimary">Stack</p>
-              <div className="flex flex-col gap-1.5 font-medium">
+              <ul className="flex flex-col gap-1.5 font-medium">
                 {stack.map((item) => (
-                  <p key={item}>{item}</p>
+                  <li key={item}>{item}</li>
                 ))}
-              </div>
+              </ul>
             </div>
             <div className="flex flex-col gap-4">
               <p className="font-bold text-textPrimary">Live</p>
@@ -100,17 +100,16 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
           <p className="sm:w-2/3">{descriptionPurpose2}</p>
         </div>
         <div className="flex justify-between items-center flex-col sm:flex-row sm:gap-20 gap-10">
-          <div className="flex flex-col items-center gap-8 basis-1/2">
+          <ul className="flex flex-col items-center gap-8 basis-1/2">
             {stackBox.map((item) => (
-              <div
+              <li
                 key={item.name}
                 className={`${item.color} flex items-center gap-2 shadow-md rounded-md py-2 px-3 w-40 bg-white/40`}
               >
-                {item.icon}
-                <p>{item.name}</p>
-              </div>
+                {item.icon} {item.name}
+              </li>
             ))}
-          </div>
+          </ul>
           <div className="basis-1/2 flex flex-col gap-6">
             <SectionTitle title="Web Stack and Explanation" />
             <p>{descriptionStack1}</p>

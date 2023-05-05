@@ -4,7 +4,7 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { workBackground } from "../assets";
 
 // Hero Section
-export const hero = {
+export const profile = {
   name: "Daniel",
   title: "Web Developer",
   location: "RO",

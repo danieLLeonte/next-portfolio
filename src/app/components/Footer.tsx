@@ -2,10 +2,10 @@
 import AppWrap from "../wrapper/AppWrap";
 import Button from "./Button";
 import SocialLinks from "./SocialLinks";
-import { hero } from "../constants";
+import { profile } from "../constants";
 
 const Footer = () => {
-  const { gmail, linkedin, github } = hero;
+  const { gmail, linkedin, github } = profile;
   return (
     <footer className="flex flex-col items-center justify-center h-auto gap-[3.125rem] md:pt-20 pt-12 xl:pb-12">
       <div className="bg-[#99E0FF] md:px-28 px-4 xsm:px-8 sm:py-16 py-12 rounded-3xl flex items-start flex-col w-full gap-8 relative overflow-hidden">

@@ -4,14 +4,15 @@ import { AiFillMail } from "react-icons/ai";
 
 export const ContactMe = () => {
   const form = useRef<HTMLFormElement>(null);
-  const [responseStatus, setResponseStatus] = useState(0); // 0 = not sent, 1 = sent, 2 = error
+  const [isError, setIsError] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
   const SERVICE_ID = "contact_service";
   const TEMPLATE_ID = "contact_form";
 
-  function validateInput(inputElement: HTMLInputElement) {
+  const validateInput = (inputElement: HTMLInputElement) => {
     const value = inputElement.value.trim();
     return value.length > 0;
-  }
+  };
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -22,11 +23,10 @@ export const ContactMe = () => {
     ) as HTMLInputElement;
     const messageInput = document.getElementById("message") as HTMLInputElement;
 
-    if (
-      !validateInput(nameInput) ||
-      !validateInput(emailInput) ||
-      !validateInput(messageInput)
-    ) {
+    const inputs = [nameInput, emailInput, messageInput];
+    const areInputsValid = inputs.every(validateInput);
+
+    if (!areInputsValid) {
       alert("Please fill in all fields without only spaces or empty values.");
       return;
     }
@@ -44,15 +44,12 @@ export const ContactMe = () => {
       .then(
         (result) => {
           console.log(result.text);
-          if (result.text === "OK") {
-            setResponseStatus(1);
-          } else {
-            setResponseStatus(2);
-          }
+          if (result.text === "OK") setIsSuccess(true);
+          else setIsSuccess(false);
         },
         (error) => {
           console.log(error.text);
-          setResponseStatus(2);
+          setIsError(true);
         }
       );
   };
@@ -106,12 +103,12 @@ export const ContactMe = () => {
         <AiFillMail className="icon" size={18} />
         lgsoftware99@gmail.com
       </p>
-      {responseStatus === 1 && (
+      {isSuccess && (
         <p className="underline underline-offset-4 absolute bottom-[2.99rem] right-0 left-0 text-center text-sm font-medium text-green-500">
           Message sent successfully!
         </p>
       )}
-      {responseStatus === 2 && (
+      {isError && (
         <p className="underline underline-offset-4 absolute bottom-[2.99rem] right-0 left-0 text-center text-sm font-medium text-red-500">
           An error occurred, please try again later.
         </p>
