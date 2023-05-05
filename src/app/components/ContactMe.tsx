@@ -4,8 +4,7 @@ import { AiFillMail } from "react-icons/ai";
 
 export const ContactMe = () => {
   const form = useRef<HTMLFormElement>(null);
-  const [isError, setIsError] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
+  const [isSuccess, setIsSuccess] = useState<boolean | undefined>(undefined);
   const SERVICE_ID = "contact_service";
   const TEMPLATE_ID = "contact_form";
 
@@ -49,7 +48,7 @@ export const ContactMe = () => {
         },
         (error) => {
           console.log(error.text);
-          setIsError(true);
+          setIsSuccess(false);
         }
       );
   };
@@ -103,14 +102,15 @@ export const ContactMe = () => {
         <AiFillMail className="icon" size={18} />
         lgsoftware99@gmail.com
       </p>
-      {isSuccess && (
-        <p className="underline underline-offset-4 absolute bottom-[2.99rem] right-0 left-0 text-center text-sm font-medium text-green-500">
-          Message sent successfully!
-        </p>
-      )}
-      {isError && (
-        <p className="underline underline-offset-4 absolute bottom-[2.99rem] right-0 left-0 text-center text-sm font-medium text-red-500">
-          An error occurred, please try again later.
+      {isSuccess !== undefined && (
+        <p
+          className={`underline underline-offset-4 absolute bottom-[2.99rem] right-0 left-0 text-center text-sm font-medium ${
+            isSuccess ? "text-green-500" : "text-red-500"
+          }}`}
+        >
+          {isSuccess
+            ? "Message sent successfully!"
+            : "An error occurred, please try again later."}
         </p>
       )}
     </div>

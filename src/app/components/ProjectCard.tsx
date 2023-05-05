@@ -24,25 +24,17 @@ const ProjectCard = ({
     >
       <div className="xl:py-11 text-white xl:w-1/3 w-3/4 flex flex-col xl:gap-5 gap-4 justify-between">
         <h6 className="heading6">{title}</h6>
-        {/* <p className="body2 hidden md:block">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, sit
-          amet ultricies lorem ipsum sed nunc.
-        </p> */}
-        <div className="flex gap-2 sm:gap-5">
+        <ul className="flex gap-2 sm:gap-5">
           {categories.map((category, index) => (
-            <div
+            <li
               key={index}
               className="bg-white/20 sm:p-2 p-1.5 rounded-md text-center sm:text-sm text-xs font-medium"
             >
               {category}
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
         <div className="flex gap-6 xl:mt-8 mt-3">
-          {/* <div className="sm:flex gap-4 hidden text-2xl"> 
-            <MdPreview />
-            <FaGithub />
-          </div> */}
           <Link
             href={`/case-study/${id}`}
             className="font-bold flex items-center gap-2"
