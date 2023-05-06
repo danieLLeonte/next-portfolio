@@ -104,7 +104,7 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
             {stackBox.map((item) => (
               <li
                 key={item.name}
-                className={`${item.color} flex items-center gap-2 shadow-md rounded-md py-2 px-3 w-40 bg-white/40`}
+                className={`${item.color} flex items-center gap-2.5 shadow-md rounded-md py-2 px-3 w-40 bg-white/40 text-xl font-medium`}
               >
                 {item.icon} {item.name}
               </li>

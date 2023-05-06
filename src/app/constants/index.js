@@ -1,4 +1,5 @@
-import { DiJavascript1, DiReact } from "react-icons/di";
+import { DiReact } from "react-icons/di";
+import { SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
 import { workBackground } from "../assets";
@@ -47,9 +48,9 @@ export const workExperience = [
     company: "JSM Masterclass",
     time: "6 months",
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Master ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Class ipsum dolor sit amet, consectetur adipiscing.",
+      "Experience ipsum dolor sit amet, consectetur adipiscing elit.",
     ],
   },
   {
@@ -58,9 +59,9 @@ export const workExperience = [
     company: "eJump Media",
     time: "1 year",
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "eJump ipsum dolor sit amet, consectetur adipiscing.",
+      "Media ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Digital ipsum dolor sit amet, consectetur adipiscing elit.",
     ],
   },
   {
@@ -69,9 +70,9 @@ export const workExperience = [
     company: "Leo Games",
     time: "2+ years",
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Indie ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Leo ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Games ipsum dolor sit amet, consectetur adipiscing.",
     ],
   },
 ];
@@ -156,19 +157,19 @@ export const caseStudies = [
   eaque optio.`,
     stackBox: [
       {
-        icon: <DiReact size={25} />,
+        icon: <DiReact size={30} />,
         name: "React",
         color: "text-[#5ED3F3]",
       },
       {
-        icon: <TbBrandNextjs size={25} />,
+        icon: <TbBrandNextjs size={30} />,
         name: "Next.js",
         color: "text-[#000000]",
       },
       {
-        icon: <DiJavascript1 size={25} />,
-        name: "JavaScript",
-        color: "text-[#F0DB4F]",
+        icon: <SiTailwindcss size={30} />,
+        name: "Tailwind",
+        color: "text-[#38BDF8]",
       },
     ],
     descriptionStack1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
@@ -217,19 +218,19 @@ export const caseStudies = [
   eaque optio.`,
     stackBox: [
       {
-        icon: <DiReact size={25} />,
+        icon: <DiReact size={30} />,
         name: "React",
         color: "text-[#5ED3F3]",
       },
       {
-        icon: <TbBrandNextjs size={25} />,
+        icon: <TbBrandNextjs size={30} />,
         name: "Next.js",
         color: "text-[#000000]",
       },
       {
-        icon: <DiJavascript1 size={25} />,
-        name: "JavaScript",
-        color: "text-[#F0DB4F]",
+        icon: <SiTailwindcss size={30} />,
+        name: "Tailwind",
+        color: "text-[#38BDF8]",
       },
     ],
     descriptionStack1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
@@ -277,19 +278,19 @@ export const caseStudies = [
   eaque optio.`,
     stackBox: [
       {
-        icon: <DiReact size={25} />,
+        icon: <DiReact size={30} />,
         name: "React",
         color: "text-[#5ED3F3]",
       },
       {
-        icon: <TbBrandNextjs size={25} />,
+        icon: <TbBrandNextjs size={30} />,
         name: "Next.js",
         color: "text-[#000000]",
       },
       {
-        icon: <DiJavascript1 size={25} />,
-        name: "JavaScript",
-        color: "text-[#F0DB4F]",
+        icon: <SiTailwindcss size={30} />,
+        name: "Tailwind",
+        color: "text-[#38BDF8]",
       },
     ],
     descriptionStack1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
