@@ -8,6 +8,11 @@ import { motion } from "framer-motion";
 
 import { logo } from "../assets";
 import { links } from "../constants";
+import {
+  navItemVariants,
+  navListVariants,
+  navVariants,
+} from "../utils/motion";
 interface NavbarProps {
   getLinkColor: (pathname: string, link: string) => string;
   handleLinkClick: (
@@ -57,17 +62,26 @@ const Navbar = ({
 
         {toggle && (
           <motion.div
-            animate={{ x: [300, 0] }}
-            transition={{ ease: "easeOut", duration: 0.85 }}
+            animate="animate"
+            variants={navVariants}
             className="fixed top-0 right-0 w-4/6 h-screen bg-secondary border-l-4 flex flex-col items-end justify-center shadow-xl"
           >
             <HiX
               className="w-10 h-10 my-7 mx-10 text-black"
               onClick={() => setToggle(false)}
             />
-            <ul className="w-full h-full flex flex-col gap-y-10 mt-4">
+            <motion.ul
+              className="w-full h-full flex flex-col gap-y-10 mt-4"
+              initial="initial"
+              animate="animate"
+              variants={navListVariants}
+            >
               {links.map((link, index) => (
-                <li className="ml-12 text-lg" key={index}>
+                <motion.li
+                  variants={navItemVariants}
+                  className="ml-12 text-lg"
+                  key={index}
+                >
                   <Link
                     href={link.path}
                     onClick={(e) => {
@@ -77,17 +91,18 @@ const Navbar = ({
                   >
                     {link.name}
                   </Link>
-                </li>
+                </motion.li>
               ))}
-              <a
+              <motion.a
+                variants={navItemVariants}
                 href="/resume.pdf"
                 download="Daniel_Leonte_CV.pdf"
                 className="p-2 rounded-full bg-primary shadow-primary/50 shadow-md flex justify-around items-center gap-0.5 px-2.5 w-32 ml-8"
               >
                 <AiOutlineDownload className="w-6 h-6 text-white" />
                 <p className="text-white text-center">Resume</p>
-              </a>
-            </ul>
+              </motion.a>
+            </motion.ul>
           </motion.div>
         )}
       </div>

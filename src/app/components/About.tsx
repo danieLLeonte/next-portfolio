@@ -19,7 +19,7 @@ const About = () => {
             key={index}
             title={service.title}
             description={service.description}
-            style={`${index % 2 === 1 ? "min-[1350px]:relative top-11" : ""}`}
+            style="odd:min-[1350px]:relative top-11"
           />
         ))}
       </div>
