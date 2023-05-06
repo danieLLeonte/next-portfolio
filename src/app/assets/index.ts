@@ -6,3 +6,4 @@ export { default as workBackground } from './workBackground.jpg';
 export { default as slackLogo } from './slackLogo.png';
 export { default as mockup } from './mockup.png';
 export { default as arrow } from './arrow.svg';
+export { default as mars } from './mars.png';

@@ -1,22 +1,14 @@
 import Image from "next/image";
 
-import { graphic, lineDirection } from "../assets";
+import { lineDirection, mars } from "../assets";
 import AppWrap from "../wrapper/AppWrap";
 import Button from "./Button";
 import SocialLinks from "./SocialLinks";
+import { hero } from "../constants";
 
-async function getData() {
-  const res = await fetch(`${process.env.API_URL}/api/homepage`, {
-    cache: "no-store",
-  });
-  return res.json();
-}
-
-const Hero = async () => {
-  const data = await getData();
-  if (!data) return <div>loading...</div>;
+const Hero = () => {
   const { name, title, location, about, gmail, linkedin, github } =
-    data.data.attributes;
+    hero
 
   return (
     <section className="flex justify-between flex-col lg:flex-row gap-20 items-center mt-24 lg:mt-0 lg:h-screen-navbar">
@@ -48,15 +40,14 @@ const Hero = async () => {
         </div>
       </div>
       <Image
-        src={graphic}
+        src={mars}
         alt="hero"
         width={650}
         height={650}
-        className="flex-1 object-contain grow lg:grow-0 xl:grow min-w-[330px]"
+        className="flex-1 object-contain grow lg:grow-0 xl:grow min-w-[330px] rounded-full border-8 shadow-2xl shadow-textSecondary/50"
       />
     </section>
   );
 };
 
-// @ts-expect-error Async Server Component
 export default AppWrap(Hero, "hero", "bg-secondary !pt-0");
