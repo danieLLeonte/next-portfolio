@@ -6,6 +6,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (min-height: 1900px) {
+  .portraitScreen {
+    @apply h-screen-navbar py-0;
+  }
+}
+
 .ease {
   transition: all 0.3s ease-in-out;
 }

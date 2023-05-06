@@ -4,7 +4,7 @@ export const hero = {
   title: "Web Developer",
   location: "RO",
   about:
-    "I am a professional web developer with 1+ years of experience. I have a passion for creating beautiful and functional websites. I am currently working with React, Node, and MongoDB.",
+    "I am a dedicated web developer with 1+ years of experience. I have a passion for creating beautiful and functional websites. I am currently working with React, Node, and MongoDB.",
   gmail: "lgsoftware99@gmail.com",
   linkedin: "https://www.linkedin.com/in/daniel-leonte/",
   github: "https://github.com/danieLLeonte",
@@ -116,5 +116,24 @@ export const people = [
     image: "https://picsum.photos/200",
     testimonial:
       "Lorem333 ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc.",
+  },
+];
+
+export const links = [
+  {
+    name: "Home",
+    path: "",
+  },
+  {
+    name: "About Me",
+    path: "#about",
+  },
+  {
+    name: "Work",
+    path: "#work",
+  },
+  {
+    name: "Projects",
+    path: "#projects",
   },
 ];

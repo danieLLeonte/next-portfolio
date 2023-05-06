@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <section className="flex flex-col items-center justify-center h-auto gap-[3.125rem] xl:py-28 py-0">
+    <section className="portraitScreen flex flex-col items-center justify-center gap-[3.125rem] xl:py-28 py-0">
       <h2 className="font-bold sm:text-[2.5rem] text-3xl text-textPrimary sm:leading-[5.4rem] leading-10 text-center sm:text-left">
         <span className="relative z-0">
           Featured

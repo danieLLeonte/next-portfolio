@@ -29,13 +29,19 @@ const Testimonials = () => {
             className="flex flex-col items-center justify-center gap-2 text-center cursor-pointer"
             onClick={() => setClickedPerson(person)}
           >
-            <div className={person !== clickedPerson ? "opacity-50" : ""}>
+            <div
+              className={
+                person !== clickedPerson
+                  ? "opacity-50 hover:scale-110 transition"
+                  : "scale-125 transition"
+              }
+            >
               <Image
                 className="rounded-full"
                 src={workBackground}
                 alt={person.name}
-                width={person !== clickedPerson ? 70 : 88}
-                height={person !== clickedPerson ? 70 : 88}
+                width={70}
+                height={70}
               />
             </div>
           </div>

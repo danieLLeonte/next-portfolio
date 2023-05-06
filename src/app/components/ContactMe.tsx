@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { AiFillMail } from "react-icons/ai";
 
 export const ContactMe = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -30,17 +31,19 @@ export const ContactMe = () => {
   };
 
   return (
-    <div className="flex flex-col justify-between h-4/5">
-      <h1 className="text-xl font-bold text-center lg:mt-4 mt-2">Contact Me</h1>
+    <div className="flex flex-col justify-between gap-6 my-auto px-10 pb-8">
+      <h1 className="text-2xl font-bold text-center text-textPrimary">
+        Contact Me
+      </h1>
       <form
-        className="pb-6 pt-4 px-10 flex flex-col h-full justify-between text-xs gap-4"
+        className="flex flex-col justify-between text-xs gap-4 font-medium"
         ref={form}
         onSubmit={sendEmail}
       >
         <div className="flex flex-col gap-1">
           <label>Name</label>
           <input
-            className="rounded-md p-2 px-3 border"
+            className="rounded-2xl p-2 px-3 border shadow-sm -ml-1"
             type="text"
             name="user_name"
             required
@@ -49,7 +52,7 @@ export const ContactMe = () => {
         <div className="flex flex-col gap-1">
           <label>Email</label>
           <input
-            className="rounded-md p-2 px-3 border"
+            className="rounded-2xl p-2 px-3 border shadow-sm -ml-1"
             type="email"
             name="user_email"
             required
@@ -58,17 +61,18 @@ export const ContactMe = () => {
         <div className="flex flex-col gap-1">
           <label>Message</label>
           <textarea
-            className="h-20 p-2 px-3 rounded-md border resize-none"
+            className="h-32 p-2 px-3 rounded-2xl shadow-sm border resize-none -ml-1"
             name="message"
             required
           />
         </div>
         <input
-          className="h-10 mt-2 bg-white border rounded-md border-primary"
+          className="bg-primary text-white font-bold text-sm py-3 px-8 rounded-full shadow-primary/50 shadow-md mt-5"
           type="submit"
           value="Send"
         />
       </form>
+      <p className="text-center text-sm flex items-center justify-center gap-2 -mb-5"><AiFillMail className="icon" size={18} />lgsoftware99@gmail.com</p>
     </div>
   );
 };
