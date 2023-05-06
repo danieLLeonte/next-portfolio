@@ -17,17 +17,17 @@ const Work = () => {
             <span className="absolute sm:bottom-1 bottom-0.5 sm:-left-1 -left-0.5 -z-10 w-[70%] sm:h-3.5 h-3 bg-highlight/25"></span>
           </span>
         </h6>
-        <p className="body2 my-7 pb-2 flex flex-col">
-          {workExperience[selectedWork].company} <br />
-          <span className="mt-3">
+        <div className="body2 my-7 pb-2 flex gap-2 flex-col">
+          <p className="text-xl">{workExperience[selectedWork].company}</p>
+          <ul className="mt-3">
             {workExperience[selectedWork].description.map((point, index) => (
-              <span className="flex gap-2" key={index}>
-                <span className="h-1.5 w-1.5 bg-[#99E0FF] rounded-full mt-2.5 pr-1.5" />
-                <span className="">{point}</span>
-              </span>
+              <li className="flex gap-2" key={index}>
+                <span className="h-1.5 w-1.5 bg-[#99E0FF] rounded-full md:mt-2.5 sm:mt-1 mt-1.5 pr-1.5" />
+                {point}
+              </li>
             ))}
-          </span>
-        </p>
+          </ul>
+        </div>
         <div className="h-11 w-11 bg-white rounded-full absolute right-[9.6rem] bottom-[6rem] hidden min-[1400px]:block">
           <div className="h-[70px] w-[70px] border border-white/20 rounded-full absolute -left-[0.8rem] -top-[0.8rem]" />
           <div className="w-[286px] border border-white/20 absolute right-[3.55rem] bottom-[1.3rem]" />

@@ -88,7 +88,7 @@ export const projects = [
     bgColor: "bg-[#5F9FFE]",
   },
   {
-    id: 0,
+    id: 2,
     title: "Movie Apps Mobile",
     categories: ["UI/UX Design", "Development"],
     image: "https://picsum.photos/200",
