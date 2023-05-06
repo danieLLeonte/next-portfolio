@@ -4,11 +4,11 @@ import { lineDirection, mars } from "../assets";
 import AppWrap from "../wrapper/AppWrap";
 import Button from "./Button";
 import SocialLinks from "./SocialLinks";
-import { hero } from "../constants";
+import { profile } from "../constants";
 
 const Hero = () => {
   const { name, title, location, about, gmail, linkedin, github } =
-    hero
+    profile
 
   return (
     <section className="flex justify-between flex-col lg:flex-row gap-20 items-center mt-24 lg:mt-0 lg:h-screen-navbar">

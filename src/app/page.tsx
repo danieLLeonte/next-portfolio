@@ -1,7 +1,6 @@
 "use client";
 import {
   About,
-  Footer,
   Hero,
   Projects,
   Testimonials,
@@ -16,7 +15,6 @@ const HomePage = () => {
       <Work />
       <Projects />
       <Testimonials />
-      <Footer />
     </>
   );
 };
