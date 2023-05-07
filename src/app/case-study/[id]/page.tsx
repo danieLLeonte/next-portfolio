@@ -141,7 +141,7 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
           <p>{descriptionProblems2}</p>
         </div>
         <Image src={mockupCS1} alt={"mockup4"} className="mx-auto" />
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 pb-10 lg:pb-0">
           <SectionTitle title="Lessons Learned" />
           <p className="sm:w-2/3">{descriptionPurpose1}</p>
         </div>
