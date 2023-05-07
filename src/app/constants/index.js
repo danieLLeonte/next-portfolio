@@ -145,6 +145,7 @@ export const caseStudies = [
     type: "Internship",
     stack: ["React", "Next.js", "Typescript", "Netlify", "MongoDB"],
     live: "",
+    repo: "",
     descriptionPurpose1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
   aspernatur molestias porro fugiat id! Maxime consectetur hic
   necessitatibus quas accusantium expedita quod repudiandae molestiae eos
@@ -206,6 +207,7 @@ export const caseStudies = [
     type: "Internship",
     stack: ["React", "Next.js", "Typescript", "Netlify", "MongoDB"],
     live: "",
+    repo: "",
     descriptionPurpose1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
   aspernatur molestias porro fugiat id! Maxime consectetur hic
   necessitatibus quas accusantium expedita quod repudiandae molestiae eos
@@ -266,6 +268,7 @@ export const caseStudies = [
     type: "Internship",
     stack: ["React", "Next.js", "Typescript", "Netlify", "MongoDB"],
     live: "",
+    repo: "",
     descriptionPurpose1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
   aspernatur molestias porro fugiat id! Maxime consectetur hic
   necessitatibus quas accusantium expedita quod repudiandae molestiae eos

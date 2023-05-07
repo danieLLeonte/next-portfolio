@@ -22,6 +22,7 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
     type,
     stack,
     live,
+    repo,
     descriptionPurpose1,
     descriptionPurpose2,
     stackBox,
@@ -40,7 +41,7 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
 
   const ProjectCard = ({ project }: { project: (typeof projects)[0] }) => (
     <div key={project.id} className="flex flex-col justify-start gap-3.5">
-      <Image src={workBackground} alt={"project1"} />
+      <Image src={workBackground} alt={"project1"} className="rounded" />
       <h6 className="mt-2 font-bold sm:text-[2.2rem] text-xl text-textPrimary leading-10">
         {project.title}
       </h6>
@@ -67,12 +68,12 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
             {title}
           </h1>
           <p className="sm:w-2/3">{description}</p>
-          <div className="w-full flex sm:gap-32 justify-between sm:justify-start flex-wrap gap-2">
-            <div className="flex flex-col gap-4">
+          <div className="w-full flex lg:gap-28 md:gap-20 justify-between sm:justify-start flex-wrap gap-6">
+            <div className="flex flex-col sm:gap-4 gap-3 px-1">
               <p className="font-bold text-textPrimary">Type</p>
               <p className="font-medium">{type}</p>
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col sm:gap-4 gap-3 px-1">
               <p className="font-bold text-textPrimary">Stack</p>
               <ul className="flex flex-col gap-1.5 font-medium">
                 {stack.map((item) => (
@@ -80,7 +81,7 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
                 ))}
               </ul>
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col sm:gap-4 gap-3 px-1">
               <p className="font-bold text-textPrimary">Live</p>
               <Link
                 href={live}
@@ -89,6 +90,17 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
                 className="text-highlight font-bold"
               >
                 View Site
+              </Link>
+            </div>
+            <div className="flex flex-col sm:gap-4 gap-3 px-1">
+              <p className="font-bold text-textPrimary">Github</p>
+              <Link
+                href={repo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-highlight font-bold"
+              >
+                View Code
               </Link>
             </div>
           </div>
@@ -136,7 +148,7 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
       </motion.div>
       <div className="bg-white w-full xl:mt-32 xl:pb-14 xl:py-0.5">
         <div className="py-24 xl:pt-0 max-w-[1440px] mx-auto px-7 xsm:px-12 sm:px-12 lg:px-24 mt-2 lg:mt-24 flex flex-col gap-14 sm:gap-18 lg:gap-32 items-center justify-center sm:justify-start sm:items-start">
-          <h2 className="font-bold sm:text-[2.5rem] text-3xl text-textPrimary sm:leading-[5rem] leading-10 text-center sm:text-left">
+          <h2 className="font-bold sm:text-[2.5rem] text-3xl text-textPrimary sm:leading-[5rem] leading-10 text-center sm:text-left pb-8 lg:pb-0">
             Other{" "}
             <span className="relative z-0">
               Projects
