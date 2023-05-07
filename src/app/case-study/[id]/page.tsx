@@ -155,7 +155,7 @@ const CaseStudyPage = ({ params }: { params: { id: number } }) => {
               <span className="absolute sm:bottom-1 bottom-0.5 sm:-left-1 -left-0.5 -z-10 w-[105%] sm:h-3.5 h-3 bg-highlight"></span>
             </span>
           </h2>
-          <div className="flex justify-between gap-x-16 gap-y-14 -mt-8 flex-col sm:flex-row">
+          <div className="flex justify-between lg:gap-x-28 gap-x-16 gap-y-14 -mt-8 flex-col sm:flex-row">
             {otherProjects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
