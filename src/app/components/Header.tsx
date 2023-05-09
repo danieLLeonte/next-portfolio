@@ -8,7 +8,7 @@ const getLinkColor = (pathname: string, link: string) =>
   pathname === link ? "text-textPrimary" : "text-textSecondary";
 
 const Header = () => {
-  const [pathName, setPathName] = useState<string>(window.location.hash);
+  const [pathName, setPathName] = useState<string>("");
   const [shadow, setShadow] = useState<boolean>(false);
   const [toggle, setToggle] = useState<boolean>(false);
   const router = useRouter();
@@ -17,6 +17,10 @@ const Header = () => {
     e: React.MouseEvent<HTMLAnchorElement> | React.MouseEvent<HTMLDivElement>,
     link: string
   ) => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
     // scroll to top, home
     if (link === "") {
       e.preventDefault();
@@ -31,6 +35,8 @@ const Header = () => {
   };
 
   useEffect(() => {
+    setPathName(window.location.hash);
+
     const handleShadow = () => {
       if (window.scrollY >= 60) {
         setShadow(true);
