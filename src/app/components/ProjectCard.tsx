@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { MdPreview } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
@@ -15,7 +15,7 @@ const ProjectCard = ({
   id: number;
   title: string;
   categories: string[];
-  image: string;
+  image: StaticImageData
   bgColor: string;
 }) => {
   return (
