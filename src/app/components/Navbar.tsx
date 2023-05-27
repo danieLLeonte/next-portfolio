@@ -8,11 +8,7 @@ import { motion } from "framer-motion";
 
 import { logo } from "../assets";
 import { links } from "../constants";
-import {
-  navItemVariants,
-  navListVariants,
-  navVariants,
-} from "../utils/motion";
+import { navItemVariants, navListVariants, navVariants } from "../utils/motion";
 interface NavbarProps {
   getLinkColor: (pathname: string, link: string) => string;
   handleLinkClick: (
@@ -39,6 +35,7 @@ const Navbar = ({
           alt="logo"
           width={45}
           height={45}
+          className="cursor-pointer"
           onClick={(e) => handleLinkClick(e, "")}
         />
       </div>
