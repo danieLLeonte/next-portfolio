@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 
 import Navbar from "./Navbar";
 
@@ -11,28 +10,6 @@ const Header = () => {
   const [pathName, setPathName] = useState<string>("");
   const [shadow, setShadow] = useState<boolean>(false);
   const [toggle, setToggle] = useState<boolean>(false);
-  const router = useRouter();
-
-  const handleLinkClick = (
-    e: React.MouseEvent<HTMLAnchorElement> | React.MouseEvent<HTMLDivElement>,
-    link: string
-  ) => {
-    if (typeof window === "undefined") {
-      return;
-    }
-
-    // scroll to top, home
-    if (link === "") {
-      e.preventDefault();
-      window.scrollTo({ top: 0 });
-      router.push("/");
-    }
-    // scroll to section
-    const targetId = link.replace("#", "");
-    let elem = document.getElementById(targetId);
-    window.scrollTo({ top: elem?.offsetTop || 0 });
-    setPathName(link);
-  };
 
   useEffect(() => {
     setPathName(window.location.hash);
@@ -57,10 +34,10 @@ const Header = () => {
     >
       <Navbar
         getLinkColor={getLinkColor}
-        handleLinkClick={handleLinkClick}
         setToggle={setToggle}
         toggle={toggle}
         pathName={pathName}
+        setPathName={setPathName}
       />
     </header>
   );
