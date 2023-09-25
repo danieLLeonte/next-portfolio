@@ -8,47 +8,38 @@ import { motion } from "framer-motion";
 
 import { logo } from "../assets";
 import { links } from "../constants";
-import {
-  navItemVariants,
-  navListVariants,
-  navVariants,
-} from "../utils/motion";
+import { navItemVariants, navListVariants, navVariants } from "../utils/motion";
 interface NavbarProps {
   getLinkColor: (pathname: string, link: string) => string;
-  handleLinkClick: (
-    e: React.MouseEvent<HTMLAnchorElement> | React.MouseEvent<HTMLImageElement>,
-    link: string
-  ) => void;
   setToggle: (toggle: boolean) => void;
   toggle: boolean;
   pathName: string;
+  setPathName: (pathName: string) => void;
 }
 
 const Navbar = ({
   getLinkColor,
-  handleLinkClick,
   setToggle,
   toggle,
   pathName,
+  setPathName,
 }: NavbarProps) => {
   return (
     <nav className="flex flex-1 justify-between items-center max-w-[1440px] mx-auto px-8 sm:px-12 lg:px-24">
       <div className="w-[123px]">
-        <Image
-          src={logo}
-          alt="logo"
-          width={45}
-          height={45}
-          onClick={(e) => handleLinkClick(e, "")}
-        />
+        <Link
+          className="w-[45px] h-[45px] block"
+          onClick={() => setPathName("")}
+          href={""}
+        >
+          <Image src={logo} alt="logo" width={45} height={45} />
+        </Link>
       </div>
+      {/* </div> */}
       <ul className="justify-between gap-x-9 text-xs hidden md:flex">
         {links.map((link, index) => (
           <li key={index} className={getLinkColor(pathName, link.path)}>
-            <Link
-              onClick={(e) => handleLinkClick(e, link.path)}
-              href={link.path}
-            >
+            <Link onClick={() => setPathName(link.path)} href={link.path}>
               {link.name}
             </Link>
           </li>
@@ -84,8 +75,8 @@ const Navbar = ({
                 >
                   <Link
                     href={link.path}
-                    onClick={(e) => {
-                      handleLinkClick(e, link.path);
+                    onClick={() => {
+                      setPathName(link.path);
                       setToggle(false);
                     }}
                   >
