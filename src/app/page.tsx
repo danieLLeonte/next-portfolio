@@ -14,7 +14,6 @@ const HomePage = () => {
       <About />
       <Work />
       <Projects />
-      <Testimonials />
     </>
   );
 };

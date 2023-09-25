@@ -11,10 +11,10 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Daniel Leonte | Portfolio",
+  title: "Daniel Leonte",
   description: "Daniel Leonte Portfolio",
   keywords:
-    "web development, web design, javascript, react, node, nextjs, html, css, typescript, portfolio, portfolio website",
+    "software engineer, software developer, web developer, front-end developer, back-end developer, full-stack developer",
 };
 
 export default function RootLayout({
