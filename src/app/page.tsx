@@ -1,11 +1,5 @@
 "use client";
-import {
-  About,
-  Hero,
-  Projects,
-  Testimonials,
-  Work,
-} from "./components";
+import { About, Hero, Projects, Work } from "./components";
 
 const HomePage = () => {
   return (

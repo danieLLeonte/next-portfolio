@@ -1,7 +1,3 @@
-import { DiReact } from "react-icons/di";
-import { SiTailwindcss } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
-
 import { workBackground } from "../assets";
 
 // Hero Section
