@@ -3,8 +3,8 @@ import { workBackground } from "../assets";
 // Hero Section
 export const profile = {
   name: "Daniel",
-  title: "Web Developer",
-  location: "RO",
+  title: "Software Engineer",
+  location: "Romania",
   about:
     "I am a dedicated web developer with 1+ years of experience. I have a passion for creating beautiful and functional websites. I am currently working with React, Node, and MongoDB.",
   gmail: "lgsoftware99@gmail.com",
