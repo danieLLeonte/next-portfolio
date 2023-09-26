@@ -41,7 +41,7 @@ export const workExperience = [
   {
     id: 0,
     title: "Full Stack Developer",
-    company: "JSM Masterclass",
+    company: "JSM Masterclass (Bootcamp)",
     time: "6 months",
     description: [
       "Master ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -62,9 +62,9 @@ export const workExperience = [
   },
   {
     id: 2,
-    title: "Indie Software Developer",
+    title: "Indie Game Developer",
     company: "Leo Games",
-    time: "2+ years",
+    time: "2 years",
     description: [
       "Indie ipsum dolor sit amet, consectetur adipiscing elit.",
       "Leo ipsum dolor sit amet, consectetur adipiscing elit.",
