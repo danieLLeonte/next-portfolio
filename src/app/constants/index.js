@@ -6,8 +6,8 @@ export const profile = {
   title: "Software Engineer",
   location: "Romania",
   about:
-    "I am a dedicated web developer with 1+ years of experience. I have a passion for creating beautiful and functional websites. I am currently working with React, Node, and MongoDB.",
-  gmail: "lgsoftware99@gmail.com",
+    "From mobile game development, I transitioned to frontend web development. Now, I am exploring the fundamentals of computer science.",
+  gmail: "leontedaniel37@gmail.com",
   linkedin: "https://www.linkedin.com/in/daniel-leonte/",
   github: "https://github.com/danieLLeonte",
 };

@@ -100,7 +100,7 @@ export const ContactMe = () => {
       </form>
       <p className="text-center text-sm flex items-center justify-center gap-2 -mb-3.5 mt-5">
         <AiFillMail className="icon" size={18} />
-        lgsoftware99@gmail.com
+        leontedaniel37@gmail.com
       </p>
       {isSuccess !== undefined && (
         <p
