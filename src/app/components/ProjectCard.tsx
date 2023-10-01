@@ -11,12 +11,16 @@ const ProjectCard = ({
   categories,
   image,
   bgColor,
+  github,
+  live,
 }: {
   id: number;
   title: string;
   categories: string[];
   image: StaticImageData;
   bgColor: string;
+  github: string;
+  live: string;
 }) => {
   return (
     <div
@@ -36,11 +40,22 @@ const ProjectCard = ({
         </ul>
         <div className="flex gap-6 xl:mt-8 mt-3">
           <Link
-            href={`/case-study/${id}`}
-            className="font-bold flex items-center gap-2"
+            href={github}
+            className="font-semibold flex items-center gap-2"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <p>See Detail Project</p>
-            <Image src={arrow} alt="arrow" width={35} height={35} />
+            <FaGithub />
+            <span>View on Github</span>
+          </Link>
+          <Link
+            href={live}
+            className="font-semibold flex items-center gap-2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <MdPreview />
+            <span>Live Preview</span>
           </Link>
         </div>
       </div>

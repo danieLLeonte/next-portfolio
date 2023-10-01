@@ -6,7 +6,7 @@ export const profile = {
   title: "Software Engineer",
   location: "Romania",
   about:
-    "From mobile game development, I transitioned to frontend web development. Now, I am exploring the fundamentals of computer science.",
+    "Self-taught software engineer with a deep fascination for technology and space. Began my journey in mobile game development, transitioned into web development, and now immersing myself in the core principles of computer science.",
   gmail: "leontedaniel37@gmail.com",
   linkedin: "https://www.linkedin.com/in/daniel-leonte/",
   github: "https://github.com/danieLLeonte",
@@ -82,6 +82,8 @@ export const projects = [
     image: pathfindingVisualizer,
     description: `Visualize how pathfinding algorithms work - Dijkstra's Algorithm`,
     bgColor: "bg-[#56B0B9]",
+    github: "https://github.com/danieLLeonte/pathfinding-visualizer",
+    live: "https://danielleonte.github.io/pathfinding-visualizer/",
   },
   {
     id: 1,
@@ -90,6 +92,8 @@ export const projects = [
     image: sortingVisualizer,
     description: `Visualize how sorting algorithms work - Merge Sort`,
     bgColor: "bg-[#5F9FFE]",
+    github: "https://github.com/danieLLeonte/sorting-visualizer",
+    live: "https://danielleonte.github.io/sorting-visualizer/",
   },
 ];
 

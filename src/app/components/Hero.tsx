@@ -7,8 +7,7 @@ import SocialLinks from "./SocialLinks";
 import { profile } from "../constants";
 
 const Hero = () => {
-  const { name, title, location, about, gmail, linkedin, github } =
-    profile
+  const { name, title, location, about, gmail, linkedin, github } = profile;
 
   return (
     <section className="flex justify-between flex-col lg:flex-row gap-20 items-center mt-24 lg:mt-0 lg:h-screen-navbar">
@@ -17,7 +16,7 @@ const Hero = () => {
           Hi, I am {name}
         </h2>
         <h1 className="sm:font-bold font-[800] xl:text-[3.5rem] md:text-[2.3rem] text-4xl text-textPrimary xl:leading-[5.4rem] leading-[155%] text-center lg:text-left">
-          Dedicated <br />
+          Professional <br />
           <span className="relative z-0">
             {title}
             <span className="absolute bottom-0 left-0 -z-10 w-full sm:h-7 h-5 bg-highlight"></span>
