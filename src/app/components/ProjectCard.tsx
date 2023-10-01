@@ -15,7 +15,7 @@ const ProjectCard = ({
   id: number;
   title: string;
   categories: string[];
-  image: StaticImageData
+  image: StaticImageData;
   bgColor: string;
 }) => {
   return (
@@ -45,9 +45,9 @@ const ProjectCard = ({
         </div>
       </div>
       <Image
-        src={mockup}
-        alt="mockup"
-        className="px-11 sm:px-0 sm:w-2/3 md:w-2/4 mt-8 xl:mt-0"
+        src={image}
+        alt={title}
+        className="w-3/4 sm:px-0 sm:w-2/3 md:w-2/4 mt-8 xl:mt-0 rounded-3xl shadow-xl"
       />
     </div>
   );

@@ -1,4 +1,4 @@
-import { workBackground } from "../assets";
+import { pathfindingVisualizer, sortingVisualizer } from "../assets";
 
 // Hero Section
 export const profile = {
@@ -77,30 +77,19 @@ export const workExperience = [
 export const projects = [
   {
     id: 0,
-    title: "Real Estate Agency Website",
-    categories: ["UI/UX Design", "Development"],
-    image: workBackground,
-    description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic`,
+    title: "Pathfinding Visualizer",
+    categories: ["Graphs", "Algorithms"],
+    image: pathfindingVisualizer,
+    description: `Visualize how pathfinding algorithms work - Dijkstra's Algorithm`,
     bgColor: "bg-[#56B0B9]",
   },
   {
     id: 1,
-    title: "Property Agent Website",
-    categories: ["UI/UX Design", "Development"],
-    image: workBackground,
-    description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic`,
+    title: "Sorting Visualizer",
+    categories: ["Sorting", "Algorithms"],
+    image: sortingVisualizer,
+    description: `Visualize how sorting algorithms work - Merge Sort`,
     bgColor: "bg-[#5F9FFE]",
-  },
-  {
-    id: 2,
-    title: "Movie Apps Mobile",
-    categories: ["UI/UX Design", "Development"],
-    image: workBackground,
-    description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic`,
-    bgColor: "bg-[#1F1D2B]",
   },
 ];
 
