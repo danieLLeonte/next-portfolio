@@ -25,7 +25,7 @@ export const Modal = ({
 
   return (
     <div
-      className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50 flex items-center justify-center"
+      className="fixed inset-0 w-full h-full bg-black bg-opacity-50 z-50 flex items-center justify-center"
       onClick={onClose}
     >
       <motion.div
@@ -37,7 +37,7 @@ export const Modal = ({
       >
         <div className="flex justify-end">
           <HiX
-            className="w-7 h-7 m-2 text-black opacity-80"
+            className="w-7 h-7 m-2 text-black opacity-80 cursor-pointer"
             onClick={onClose}
           />
         </div>

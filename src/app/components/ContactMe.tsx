@@ -93,7 +93,7 @@ export const ContactMe = () => {
           />
         </div>
         <input
-          className="bg-primary text-white font-bold text-sm py-3 px-8 rounded-full shadow-primary/50 shadow-md mt-5"
+          className="bg-primary text-white font-bold text-sm py-3 px-8 rounded-full shadow-primary/50 shadow-md mt-5 cursor-pointer"
           type="submit"
           value="Send"
         />
