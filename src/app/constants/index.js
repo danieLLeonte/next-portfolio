@@ -44,9 +44,8 @@ export const workExperience = [
     company: "JSM Masterclass (Bootcamp)",
     time: "6 months",
     description: [
-      "Master ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Class ipsum dolor sit amet, consectetur adipiscing.",
-      "Experience ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Collaborated with international teams on full-stack projects using React.js/Next.js, TypeScript, Node.js, Express, and MongoDB.",
+      "Played a key role in project success and met tight deadlines.",
     ],
   },
   {
@@ -55,9 +54,8 @@ export const workExperience = [
     company: "eJump Media",
     time: "1 year",
     description: [
-      "eJump ipsum dolor sit amet, consectetur adipiscing.",
-      "Media ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Digital ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Enhanced user interfaces with React.js in developing the VMS - Fleet Management application for Autonom.",
+      "Led Carfix app development with React Native and contributed to backend tasks for efficiency.",
     ],
   },
   {
@@ -66,9 +64,7 @@ export const workExperience = [
     company: "Leo Games",
     time: "2 years",
     description: [
-      "Indie ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Leo ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Games ipsum dolor sit amet, consectetur adipiscing.",
+      "From concept to publication, I worked on mobile game development using Unity and C#.",
     ],
   },
 ];
