@@ -15,7 +15,7 @@ const Hero = () => {
         <h2 className="font-bold uppercase text-primary tracking-[.5em] text-xs xl:text-base">
           Hi, I am {name}
         </h2>
-        <h1 className="sm:font-bold font-[800] xl:text-[3.5rem] md:text-[2.3rem] text-4xl text-textPrimary xl:leading-[5.4rem] leading-[155%] text-center lg:text-left">
+        <h1 className="sm:font-bold font-[800] xl:text-[3.5rem] md:text-[2.3rem] text-3xl text-textPrimary xl:leading-[5.4rem] leading-[155%] text-center lg:text-left">
           Professional <br />
           <span className="relative z-0">
             {title}

@@ -6,7 +6,7 @@ export const profile = {
   title: "Software Engineer",
   location: "Romania",
   about:
-    "Self-taught software engineer with a deep fascination for technology and space. Began my journey in mobile game development, transitioned into web development, and now immersing myself in the core principles of computer science.",
+    "I'm a self-taught software engineer with a deep passion for technology and space. Proficient in web development and eager to excel in a professional setting.",
   gmail: "leontedaniel37@gmail.com",
   linkedin: "https://www.linkedin.com/in/daniel-leonte/",
   github: "https://github.com/danieLLeonte",

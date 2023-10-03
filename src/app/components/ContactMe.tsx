@@ -54,7 +54,7 @@ export const ContactMe = () => {
   };
 
   return (
-    <div className="flex flex-col justify-between gap-6 my-auto px-10 pb-8 relative">
+    <div className="flex flex-col justify-between gap-6 my-auto px-8 pb-8 relative">
       <h1 className="text-2xl font-bold text-center text-textPrimary">
         Contact Me
       </h1>
