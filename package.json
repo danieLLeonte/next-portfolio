@@ -10,21 +10,22 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
-    "@types/node": "20.2.5",
-    "@types/react": "18.2.7",
-    "@types/react-dom": "18.2.4",
-    "eslint": "8.41.0",
-    "eslint-config-next": "13.4.4",
-    "framer-motion": "^10.12.16",
-    "next": "13.4.4",
+    "@types/node": "20.6.5",
+    "@types/react": "18.2.22",
+    "@types/react-dom": "18.2.7",
+    "eslint": "8.50.0",
+    "eslint-config-next": "13.5.2",
+    "framer-motion": "^10.16.4",
+    "next": "13.5.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.8.0",
-    "typescript": "5.0.4"
+    "react-icons": "^4.11.0",
+    "sharp": "^0.32.6",
+    "typescript": "5.2.2"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.23",
-    "tailwindcss": "^3.3.2"
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.30",
+    "tailwindcss": "^3.3.3"
   }
 }

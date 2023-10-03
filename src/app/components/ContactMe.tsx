@@ -54,7 +54,7 @@ export const ContactMe = () => {
   };
 
   return (
-    <div className="flex flex-col justify-between gap-6 my-auto px-10 pb-8 relative">
+    <div className="flex flex-col justify-between gap-6 my-auto px-8 pb-8 relative">
       <h1 className="text-2xl font-bold text-center text-textPrimary">
         Contact Me
       </h1>
@@ -93,14 +93,14 @@ export const ContactMe = () => {
           />
         </div>
         <input
-          className="bg-primary text-white font-bold text-sm py-3 px-8 rounded-full shadow-primary/50 shadow-md mt-5"
+          className="bg-primary text-white font-bold text-sm py-3 px-8 rounded-full shadow-primary/50 shadow-md mt-5 cursor-pointer"
           type="submit"
           value="Send"
         />
       </form>
       <p className="text-center text-sm flex items-center justify-center gap-2 -mb-3.5 mt-5">
         <AiFillMail className="icon" size={18} />
-        lgsoftware99@gmail.com
+        leontedaniel37@gmail.com
       </p>
       {isSuccess !== undefined && (
         <p

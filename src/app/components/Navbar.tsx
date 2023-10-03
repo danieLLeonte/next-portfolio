@@ -47,7 +47,7 @@ const Navbar = ({
       </ul>
       <div className="block md:hidden">
         <BiMenuAltRight
-          className="-mr-2 h-14 w-14 text-black"
+          className="-mr-2 h-14 w-14 text-black cursor-pointer"
           onClick={() => setToggle(true)}
         />
 
@@ -58,7 +58,7 @@ const Navbar = ({
             className="fixed top-0 right-0 w-4/6 h-screen bg-secondary border-l-4 flex flex-col items-end justify-center shadow-xl"
           >
             <HiX
-              className="w-10 h-10 my-7 mx-10 text-black"
+              className="w-10 h-10 my-7 mx-10 text-black cursor-pointer"
               onClick={() => setToggle(false)}
             />
             <motion.ul

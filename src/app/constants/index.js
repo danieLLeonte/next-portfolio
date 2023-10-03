@@ -1,17 +1,13 @@
-import { DiReact } from "react-icons/di";
-import { SiTailwindcss } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
-
-import { workBackground } from "../assets";
+import { pathfindingVisualizer, sortingVisualizer } from "../assets";
 
 // Hero Section
 export const profile = {
   name: "Daniel",
-  title: "Web Developer",
-  location: "RO",
+  title: "Software Engineer",
+  location: "Romania",
   about:
-    "I am a dedicated web developer with 1+ years of experience. I have a passion for creating beautiful and functional websites. I am currently working with React, Node, and MongoDB.",
-  gmail: "lgsoftware99@gmail.com",
+    "I'm a self-taught software engineer with a deep passion for technology and space. Proficient in web development and eager to excel in a professional setting.",
+  gmail: "leontedaniel37@gmail.com",
   linkedin: "https://www.linkedin.com/in/daniel-leonte/",
   github: "https://github.com/danieLLeonte",
 };
@@ -45,12 +41,11 @@ export const workExperience = [
   {
     id: 0,
     title: "Full Stack Developer",
-    company: "JSM Masterclass",
+    company: "JSM Masterclass (Bootcamp)",
     time: "6 months",
     description: [
-      "Master ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Class ipsum dolor sit amet, consectetur adipiscing.",
-      "Experience ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Collaborated with international teams on full-stack projects using React.js/Next.js, TypeScript, Node.js, Express, and MongoDB.",
+      "Played a key role in project success and met tight deadlines.",
     ],
   },
   {
@@ -59,20 +54,17 @@ export const workExperience = [
     company: "eJump Media",
     time: "1 year",
     description: [
-      "eJump ipsum dolor sit amet, consectetur adipiscing.",
-      "Media ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Digital ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Enhanced user interfaces with React.js in developing the VMS - Fleet Management application for Autonom.",
+      "Led Carfix app development with React Native and contributed to backend tasks for efficiency.",
     ],
   },
   {
     id: 2,
-    title: "Indie Software Developer",
+    title: "Indie Game Developer",
     company: "Leo Games",
-    time: "2+ years",
+    time: "2 years",
     description: [
-      "Indie ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Leo ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Games ipsum dolor sit amet, consectetur adipiscing.",
+      "From concept to publication, I worked on mobile game development using Unity and C#.",
     ],
   },
 ];
@@ -81,241 +73,23 @@ export const workExperience = [
 export const projects = [
   {
     id: 0,
-    title: "Real Estate Agency Website",
-    categories: ["UI/UX Design", "Development"],
-    image: workBackground,
-    description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic`,
+    title: "Pathfinding Visualizer",
+    categories: ["Graphs", "Algorithms"],
+    image: pathfindingVisualizer,
+    description: `Visualize how pathfinding algorithms work - Dijkstra's Algorithm`,
     bgColor: "bg-[#56B0B9]",
+    github: "https://github.com/danieLLeonte/pathfinding-visualizer",
+    live: "https://danielleonte.github.io/pathfinding-visualizer/",
   },
   {
     id: 1,
-    title: "Property Agent Website",
-    categories: ["UI/UX Design", "Development"],
-    image: workBackground,
-    description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic`,
+    title: "Sorting Visualizer",
+    categories: ["Sorting", "Algorithms"],
+    image: sortingVisualizer,
+    description: `Visualize how sorting algorithms work - Merge Sort`,
     bgColor: "bg-[#5F9FFE]",
-  },
-  {
-    id: 2,
-    title: "Movie Apps Mobile",
-    categories: ["UI/UX Design", "Development"],
-    image: workBackground,
-    description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic`,
-    bgColor: "bg-[#1F1D2B]",
-  },
-];
-
-export const people = [
-  {
-    name: "John Doe",
-    position: "CEO of Tesla",
-    image: "https://picsum.photos/200",
-    testimonial:
-      "Lorem111 ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc.",
-  },
-  {
-    name: "John Doe",
-    position: "CEO of SpaceX",
-    testimonial:
-      "Lorem222 ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc.",
-  },
-  {
-    name: "John Doe",
-    position: "CEO of Apple",
-    image: "https://picsum.photos/200",
-    testimonial:
-      "Lorem333 ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nisl vel aliquam lacinia, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nunc.",
-  },
-];
-
-// Case Studies
-export const caseStudies = [
-  {
-    id: 0,
-    title: "Real Estate Agency Website",
-    description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic
-  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
-  eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
-  labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
-  facere modi placeat culpa. Sint, maiores.`,
-    type: "Internship",
-    stack: ["React", "Next.js", "Typescript", "Netlify", "MongoDB"],
-    live: "",
-    repo: "",
-    descriptionPurpose1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic
-  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
-  eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
-  labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
-  facere modi placeat culpa. Sint, maiores.`,
-    descriptionPurpose2: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic
-  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
-  eaque optio.`,
-    stackBox: [
-      {
-        icon: <DiReact size={30} />,
-        name: "React",
-        color: "text-[#5ED3F3]",
-      },
-      {
-        icon: <TbBrandNextjs size={30} />,
-        name: "Next.js",
-        color: "text-[#000000]",
-      },
-      {
-        icon: <SiTailwindcss size={30} />,
-        name: "Tailwind",
-        color: "text-[#38BDF8]",
-      },
-    ],
-    descriptionStack1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic
-  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
-  eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
-  labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
-  facere modi placeat culpa. Sint, maiores.`,
-    descriptionStack2: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic
-  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
-  eaque optio.`,
-    descriptionProblems1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic
-  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
-  eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
-  labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
-  facere modi placeat culpa. Sint, maiores.`,
-    descriptionProblems2: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic
-  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
-  eaque optio.`,
-  },
-
-  {
-    id: 1,
-    title: "Property Agent Website",
-    description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic
-  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
-  eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
-  labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
-  facere modi placeat culpa. Sint, maiores.`,
-    type: "Internship",
-    stack: ["React", "Next.js", "Typescript", "Netlify", "MongoDB"],
-    live: "",
-    repo: "",
-    descriptionPurpose1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic
-  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
-  eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
-  labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
-  facere modi placeat culpa. Sint, maiores.`,
-    descriptionPurpose2: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic
-  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
-  eaque optio.`,
-    stackBox: [
-      {
-        icon: <DiReact size={30} />,
-        name: "React",
-        color: "text-[#5ED3F3]",
-      },
-      {
-        icon: <TbBrandNextjs size={30} />,
-        name: "Next.js",
-        color: "text-[#000000]",
-      },
-      {
-        icon: <SiTailwindcss size={30} />,
-        name: "Tailwind",
-        color: "text-[#38BDF8]",
-      },
-    ],
-    descriptionStack1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic
-  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
-  eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
-  labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
-  facere modi placeat culpa. Sint, maiores.`,
-    descriptionStack2: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic
-  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
-  eaque optio.`,
-    descriptionProblems1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic
-  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
-  eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
-  labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
-  facere modi placeat culpa. Sint, maiores.`,
-    descriptionProblems2: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic
-  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
-  eaque optio.`,
-  },
-  {
-    id: 2,
-    title: "Movie Apps Mobile",
-    description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic
-  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
-  eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
-  labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
-  facere modi placeat culpa. Sint, maiores.`,
-    type: "Internship",
-    stack: ["React", "Next.js", "Typescript", "Netlify", "MongoDB"],
-    live: "",
-    repo: "",
-    descriptionPurpose1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic
-  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
-  eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
-  labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
-  facere modi placeat culpa. Sint, maiores.`,
-    descriptionPurpose2: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic
-  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
-  eaque optio.`,
-    stackBox: [
-      {
-        icon: <DiReact size={30} />,
-        name: "React",
-        color: "text-[#5ED3F3]",
-      },
-      {
-        icon: <TbBrandNextjs size={30} />,
-        name: "Next.js",
-        color: "text-[#000000]",
-      },
-      {
-        icon: <SiTailwindcss size={30} />,
-        name: "Tailwind",
-        color: "text-[#38BDF8]",
-      },
-    ],
-    descriptionStack1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic
-  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
-  eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
-  labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
-  facere modi placeat culpa. Sint, maiores.`,
-    descriptionStack2: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic
-  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
-  eaque optio.`,
-    descriptionProblems1: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic
-  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
-  eaque optio, ipsa temporibus mollitia architecto ea repellat obcaecati
-  labore blanditiis velit eum. Libero ratione neque, sint ex adipisci
-  facere modi placeat culpa. Sint, maiores.`,
-    descriptionProblems2: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-  aspernatur molestias porro fugiat id! Maxime consectetur hic
-  necessitatibus quas accusantium expedita quod repudiandae molestiae eos
-  eaque optio.`,
+    github: "https://github.com/danieLLeonte/sorting-visualizer",
+    live: "https://danielleonte.github.io/sorting-visualizer/",
   },
 ];
 
@@ -324,10 +98,10 @@ export const links = [
     name: "Home",
     path: "",
   },
-  {
-    name: "About Me",
-    path: "#about",
-  },
+  // {
+  //   name: "About Me",
+  //   path: "#about",
+  // },
   {
     name: "Work",
     path: "#work",
