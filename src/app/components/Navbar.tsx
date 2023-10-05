@@ -29,8 +29,8 @@ const Navbar = ({
       <div className="w-[123px]">
         <Link
           className="w-[45px] h-[45px] block"
-          onClick={() => setPathName("")}
-          href={""}
+          onClick={() => setPathName("/")}
+          href="/"
         >
           <Image src={logo} alt="logo" width={45} height={45} />
         </Link>

@@ -96,7 +96,7 @@ export const projects = [
 export const links = [
   {
     name: "Home",
-    path: "",
+    path: "/",
   },
   // {
   //   name: "About Me",

@@ -7,7 +7,7 @@ const getLinkColor = (pathname: string, link: string) =>
   pathname === link ? "text-textPrimary" : "text-textSecondary";
 
 const Header = () => {
-  const [pathName, setPathName] = useState<string>("");
+  const [pathName, setPathName] = useState<string>("/");
   const [shadow, setShadow] = useState<boolean>(false);
   const [toggle, setToggle] = useState<boolean>(false);
 
