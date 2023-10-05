@@ -22,9 +22,9 @@ const WorkCard = ({
     >
       <Image src={slackLogo} alt="slack" />
       <div className="flex flex-col gap-y-1.5">
-        <h6 className="font-bold text-textPrimary xsm:text-2xl text-xl">
+        <p className="font-bold text-textPrimary xsm:text-2xl text-xl">
           {company}
-        </h6>
+        </p>
         <div className="flex flex-col md:flex-row gap-x-1">
           <p className="font-medium xsm:text-base text-xs">{title}</p>
           <p className="font-medium xsm:text-base text-xs hidden xl:block">-</p>

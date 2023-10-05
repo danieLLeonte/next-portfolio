@@ -11,13 +11,13 @@ const Work = () => {
     <section className="flex items-center lg:justify-between flex-col lg:flex-row lg:h-screen-navbar xl:pt-32 gap-5">
       <div className="bg-textPrimary xl:w-[607px] lg:w-[500px] md:w-[600px] sm:w-[500px] xsm:w-[340px] w-[290px] lg:h-[593px] xl:p-28 xsm:p-12 p-8 rounded-2xl flex flex-col justify-center relative">
         <div className="h-3.5 w-3.5 bg-[#99E0FF] rounded-full absolute lg:right-24 lg:top-28 right-16 top-10" />
-        <h6 className="heading6">
+        <p className="heading6">
           Working <br />
           <span className="relative z-0">
             experience
             <span className="absolute sm:bottom-1 bottom-0.5 sm:-left-1 -left-0.5 -z-10 w-[70%] sm:h-3.5 h-3 bg-highlight/25"></span>
           </span>
-        </h6>
+        </p>
         <div className="body2 my-7 pb-2 flex gap-2 flex-col text-[#9D9D9D]">
           <p className="text-xl">{workExperience[selectedWork].company}</p>
           <ul className="mt-3">
