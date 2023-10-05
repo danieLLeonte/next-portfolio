@@ -44,7 +44,7 @@ export const workExperience = [
     company: "JSM Masterclass (Bootcamp)",
     time: "6 months",
     description: [
-      "Collaborated with international teams on full-stack projects using React.js/Next.js, TypeScript, Node.js, Express, and MongoDB.",
+      "Collaborated with international teams on full-stack projects using React.js/Next.js, TypeScript, Node.js, Express.js, and MongoDB.",
       "Played a key role in project success and met tight deadlines.",
     ],
   },
@@ -54,8 +54,8 @@ export const workExperience = [
     company: "eJump Media",
     time: "1 year",
     description: [
-      "Enhanced user interfaces with React.js in developing the VMS - Fleet Management application for Autonom.",
-      "Led Carfix app development with React Native and contributed to backend tasks for efficiency.",
+      "Led frontend development for the Carfix App using React Native, promoting client collaboration to meet evolving user needs.",
+      "Utilized React.js to create responsive user interfaces and address bugs.",
     ],
   },
   {
