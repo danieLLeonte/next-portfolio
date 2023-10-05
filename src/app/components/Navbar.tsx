@@ -86,7 +86,7 @@ const Navbar = ({
               ))}
               <motion.a
                 variants={navItemVariants}
-                href="/resume.pdf"
+                href="/Daniel_Leonte_CV.pdf"
                 download="Daniel_Leonte_CV.pdf"
                 className="p-2 rounded-full bg-primary shadow-primary/50 shadow-md flex justify-around items-center gap-0.5 px-2.5 w-32 ml-8"
               >
@@ -98,7 +98,7 @@ const Navbar = ({
         )}
       </div>
       <a
-        href="/resume.pdf"
+        href="/Daniel_Leonte_CV.pdf"
         download="Daniel_Leonte_CV.pdf"
         className="p-2 px-3 rounded-full bg-primary shadow-primary/50 shadow-md hidden md:flex gap-1 items-center"
       >
