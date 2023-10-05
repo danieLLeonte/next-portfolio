@@ -18,7 +18,7 @@ const Work = () => {
             <span className="absolute sm:bottom-1 bottom-0.5 sm:-left-1 -left-0.5 -z-10 w-[70%] sm:h-3.5 h-3 bg-highlight/25"></span>
           </span>
         </h6>
-        <div className="body2 my-7 pb-2 flex gap-2 flex-col">
+        <div className="body2 my-7 pb-2 flex gap-2 flex-col text-[#9D9D9D]">
           <p className="text-xl">{workExperience[selectedWork].company}</p>
           <ul className="mt-3">
             {workExperience[selectedWork].description.map((point, index) => (
