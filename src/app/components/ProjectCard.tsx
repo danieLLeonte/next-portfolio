@@ -27,7 +27,7 @@ const ProjectCard = ({
       className={`${bgColor} xl:px-28 py-11 rounded-3xl flex justify-between items-center flex-col xl:flex-row`}
     >
       <div className="xl:py-11 text-white xl:w-1/3 w-3/4 flex flex-col xl:gap-5 gap-4 justify-between">
-        <h6 className="heading6">{title}</h6>
+        <p className="heading6">{title}</p>
         <ul className="flex gap-2 sm:gap-5">
           {categories.map((category, index) => (
             <li
