@@ -54,8 +54,8 @@ export const workExperience = [
     company: "eJump Media",
     time: "1 year",
     description: [
-      "Led frontend development for the Carfix App using React Native, promoting client collaboration to meet evolving user needs.",
-      "Utilized React.js to create responsive user interfaces and address bugs.",
+      "Developed and debugged React.js components, ensuring mobile responsiveness, clean code, and improved web app performance.",
+      "Collaborated with clients, efficiently handling the Carfix mobile app tasks using React Native.",
     ],
   },
   {
