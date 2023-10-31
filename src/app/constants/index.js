@@ -48,8 +48,7 @@ export const workExperience = [
     company: "JSM Masterclass (Bootcamp)",
     time: "6 months",
     description: [
-      "Collaborated with international teams on full-stack projects using React.js/Next.js, TypeScript, Node.js, Express.js, and MongoDB.",
-      "Played a key role in project success and met tight deadlines.",
+      "Collaborated with international teams on MERN stack projects.",
     ],
   },
   {
@@ -57,10 +56,7 @@ export const workExperience = [
     title: "Frontend Developer",
     company: "eJump Media",
     time: "1 year",
-    description: [
-      "Developed and debugged React.js components, ensuring mobile responsiveness, clean code, and improved web app performance.",
-      "Collaborated with clients, efficiently handling the Carfix mobile app tasks using React Native.",
-    ],
+    description: ["Developed UI using React/React Native."],
   },
   {
     id: 2,
