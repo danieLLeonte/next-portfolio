@@ -12,3 +12,4 @@ export { default as mockupCS2 } from "./mockupCS2.png";
 export { default as mockupCS3 } from "./mockupCS3.png";
 export { default as pathfindingVisualizer } from "./pathfindingVisualizer.png";
 export { default as sortingVisualizer } from "./sortingVisualizer.png";
+export { default as spaceSightings } from "./spaceSightings.png";

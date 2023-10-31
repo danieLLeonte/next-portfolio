@@ -11,7 +11,7 @@ module.exports = {
         secondary: "#F6F6F6",
         highlight: "#FFBE62",
         textPrimary: "#151E2C",
-        textSecondary: "#858585",
+        textSecondary: "#7a7a7a",
       },
       screens: {
         xsm: "375px",

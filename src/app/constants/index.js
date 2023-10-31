@@ -1,4 +1,8 @@
-import { pathfindingVisualizer, sortingVisualizer } from "../assets";
+import {
+  pathfindingVisualizer,
+  sortingVisualizer,
+  spaceSightings,
+} from "../assets";
 
 // Hero Section
 export const profile = {
@@ -73,21 +77,31 @@ export const workExperience = [
 export const projects = [
   {
     id: 0,
+    title: "Space Sightings",
+    categories: ["APOD API", "React.js"],
+    image: spaceSightings,
+    description: `Astronomy Picture of the Day`,
+    bgColor: "bg-[#1F1D2B]",
+    github: "https://github.com/danieLLeonte/space-sightings",
+    live: "https://mellifluous-parfait-974ecd.netlify.app/",
+  },
+  {
+    id: 1,
     title: "Pathfinding Visualizer",
     categories: ["Graphs", "Algorithms"],
     image: pathfindingVisualizer,
-    description: `Visualize how pathfinding algorithms work - Dijkstra's Algorithm`,
-    bgColor: "bg-[#56B0B9]",
+    description: `Visualize how pathfinding algorithms work`,
+    bgColor: "bg-[#5F9FFE]",
     github: "https://github.com/danieLLeonte/pathfinding-visualizer",
     live: "https://danielleonte.github.io/pathfinding-visualizer/",
   },
   {
-    id: 1,
+    id: 2,
     title: "Sorting Visualizer",
     categories: ["Sorting", "Algorithms"],
     image: sortingVisualizer,
-    description: `Visualize how sorting algorithms work - Merge Sort`,
-    bgColor: "bg-[#5F9FFE]",
+    description: `Visualize how sorting algorithms work`,
+    bgColor: "bg-[#56B0B9]",
     github: "https://github.com/danieLLeonte/sorting-visualizer",
     live: "https://danielleonte.github.io/sorting-visualizer/",
   },
