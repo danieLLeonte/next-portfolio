@@ -23,7 +23,7 @@ const Hero = () => {
           </span>
           <br /> based in {location}
         </h1>
-        <p className="lg:font-medium font-semibold xl:text-base lg:text-[0.8rem] sm:px-20 lg:px-0 text-sm xl:leading-9 leading-7 text-center lg:text-left">
+        <p className="font-semibold lg:text-[1.1rem] sm:px-20 lg:px-0 xl:leading-9 leading-7 text-center lg:text-left">
           {about}
         </p>
         <div className="flex gap-11 items-center flex-col sm:flex-row">

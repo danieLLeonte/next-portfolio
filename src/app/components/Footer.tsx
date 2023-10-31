@@ -15,7 +15,7 @@ const Footer = () => {
         <h3 className="font-bold xl:text-6xl md:text-3xl text-2xl text-textPrimary xl:leading-[5.3rem] md:leading-[3.5rem] leading-10 z-0">
           Looking for a software <br />
           <span className="relative z-0">
-            engineer
+            developer
             <span className="absolute sm:bottom-1 bottom-0.5 left-0 -z-10 w-[95%] sm:h-3.5 h-3 bg-highlight"></span>
             ?
           </span>

@@ -7,10 +7,10 @@ import {
 // Hero Section
 export const profile = {
   name: "Daniel",
-  title: "Software Engineer",
+  title: "Software Developer",
   location: "Romania",
   about:
-    "I'm a self-taught software engineer with a deep passion for technology and space. Proficient in web development and eager to excel in a professional setting.",
+    "I'm a web developer driven by a deep passion for technology and space.",
   gmail: "leontedaniel37@gmail.com",
   linkedin: "https://www.linkedin.com/in/daniel-leonte/",
   github: "https://github.com/danieLLeonte",
@@ -64,7 +64,7 @@ export const workExperience = [
   },
   {
     id: 2,
-    title: "Indie Game Developer",
+    title: "Indie Software Developer",
     company: "Leo Games",
     time: "2 years",
     description: [
@@ -78,7 +78,7 @@ export const projects = [
   {
     id: 0,
     title: "Space Sightings",
-    categories: ["APOD API", "React.js"],
+    categories: ["NASA API", "React.js"],
     image: spaceSightings,
     description: `Astronomy Picture of the Day`,
     bgColor: "bg-[#1F1D2B]",
